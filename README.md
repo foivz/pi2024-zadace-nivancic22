@@ -1,6 +1,6 @@
 
 # Naziv projekta
-Sustav upravljanja gradskim prijevozom putnika
+Sustav upravljanja gradskim prijevozom putnika - "Bus+"
 
 ## Podaci o studentu
 
