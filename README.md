@@ -16,8 +16,8 @@ Niko Ivančić | nivancic22@foi.hr | 0016158076 | nivancic22
 
 
 ## Zadatak
-
+Analiza i specifikacija korisničkih zahtjeva
 
 ## Resursi
-
+Svi resursi se nalaze u mapi _documentation_.
 
