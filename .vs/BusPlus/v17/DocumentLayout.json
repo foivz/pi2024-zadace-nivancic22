@@ -1,7 +1,35 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\nikoi\\Desktop\\4. semestar\\PI\\BusPlus\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nikoi\\Desktop\\4. semestar\\PI\\BusPlus\\Software\\BusPlus\\BusPlus\\Klase\\Zaposlenik.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Software\\BusPlus\\BusPlus\\Klase\\Zaposlenik.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nikoi\\Desktop\\4. semestar\\PI\\BusPlus\\Software\\BusPlus\\BusPlus\\FormaStanice.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Software\\BusPlus\\BusPlus\\FormaStanice.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/31.147.206.65/PI2324_nivancic22_DB/PI2324_nivancic22_User/SqlTable/dbo.AutobusneLinije.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nikoi\\Desktop\\4. semestar\\PI\\BusPlus\\Software\\BusPlus\\BusPlus\\DLL\\DBLayer.dll||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Software\\BusPlus\\BusPlus\\DLL\\DBLayer.dll||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nikoi\\Desktop\\4. semestar\\PI\\BusPlus\\Software\\BusPlus\\BusPlus\\DLL\\desktop.ini||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Software\\BusPlus\\BusPlus\\DLL\\desktop.ini||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nikoi\\Desktop\\4. semestar\\PI\\BusPlus\\Software\\BusPlus\\BusPlus\\FormaStanice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Software\\BusPlus\\BusPlus\\FormaStanice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nikoi\\Desktop\\4. semestar\\PI\\BusPlus\\Software\\BusPlus\\BusPlus\\FormaStanice.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Software\\BusPlus\\BusPlus\\FormaStanice.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +37,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,6 +70,86 @@
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Zaposlenik.cs",
+              "DocumentMoniker": "C:\\Users\\nikoi\\Desktop\\4. semestar\\PI\\BusPlus\\Software\\BusPlus\\BusPlus\\Klase\\Zaposlenik.cs",
+              "RelativeDocumentMoniker": "Software\\BusPlus\\BusPlus\\Klase\\Zaposlenik.cs",
+              "ToolTip": "C:\\Users\\nikoi\\Desktop\\4. semestar\\PI\\BusPlus\\Software\\BusPlus\\BusPlus\\Klase\\Zaposlenik.cs",
+              "RelativeToolTip": "Software\\BusPlus\\BusPlus\\Klase\\Zaposlenik.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-25T10:14:49.071Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "dbo.AutobusneLinije [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/31.147.206.65/PI2324_nivancic22_DB/PI2324_nivancic22_User/SqlTable/dbo.AutobusneLinije.sql",
+              "ToolTip": "dbo.AutobusneLinije [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-05-25T09:54:48.126Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DBLayer.dll",
+              "DocumentMoniker": "C:\\Users\\nikoi\\Desktop\\4. semestar\\PI\\BusPlus\\Software\\BusPlus\\BusPlus\\DLL\\DBLayer.dll",
+              "RelativeDocumentMoniker": "Software\\BusPlus\\BusPlus\\DLL\\DBLayer.dll",
+              "ToolTip": "C:\\Users\\nikoi\\Desktop\\4. semestar\\PI\\BusPlus\\Software\\BusPlus\\BusPlus\\DLL\\DBLayer.dll",
+              "RelativeToolTip": "Software\\BusPlus\\BusPlus\\DLL\\DBLayer.dll",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001697|",
+              "WhenOpened": "2024-05-25T09:12:48.699Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "desktop.ini",
+              "DocumentMoniker": "C:\\Users\\nikoi\\Desktop\\4. semestar\\PI\\BusPlus\\Software\\BusPlus\\BusPlus\\DLL\\desktop.ini",
+              "RelativeDocumentMoniker": "Software\\BusPlus\\BusPlus\\DLL\\desktop.ini",
+              "ToolTip": "C:\\Users\\nikoi\\Desktop\\4. semestar\\PI\\BusPlus\\Software\\BusPlus\\BusPlus\\DLL\\desktop.ini",
+              "RelativeToolTip": "Software\\BusPlus\\BusPlus\\DLL\\desktop.ini",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002768|",
+              "WhenOpened": "2024-05-25T09:12:46.719Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "FormaStanice.cs",
+              "DocumentMoniker": "C:\\Users\\nikoi\\Desktop\\4. semestar\\PI\\BusPlus\\Software\\BusPlus\\BusPlus\\FormaStanice.cs",
+              "RelativeDocumentMoniker": "Software\\BusPlus\\BusPlus\\FormaStanice.cs",
+              "ToolTip": "C:\\Users\\nikoi\\Desktop\\4. semestar\\PI\\BusPlus\\Software\\BusPlus\\BusPlus\\FormaStanice.cs",
+              "RelativeToolTip": "Software\\BusPlus\\BusPlus\\FormaStanice.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-23T13:37:48.671Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FormaStanice.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\nikoi\\Desktop\\4. semestar\\PI\\BusPlus\\Software\\BusPlus\\BusPlus\\FormaStanice.Designer.cs",
+              "RelativeDocumentMoniker": "Software\\BusPlus\\BusPlus\\FormaStanice.Designer.cs",
+              "ToolTip": "C:\\Users\\nikoi\\Desktop\\4. semestar\\PI\\BusPlus\\Software\\BusPlus\\BusPlus\\FormaStanice.Designer.cs",
+              "RelativeToolTip": "Software\\BusPlus\\BusPlus\\FormaStanice.Designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-23T13:37:48.105Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "FormaStanice.resx",
+              "DocumentMoniker": "C:\\Users\\nikoi\\Desktop\\4. semestar\\PI\\BusPlus\\Software\\BusPlus\\BusPlus\\FormaStanice.resx",
+              "RelativeDocumentMoniker": "Software\\BusPlus\\BusPlus\\FormaStanice.resx",
+              "ToolTip": "C:\\Users\\nikoi\\Desktop\\4. semestar\\PI\\BusPlus\\Software\\BusPlus\\BusPlus\\FormaStanice.resx",
+              "RelativeToolTip": "Software\\BusPlus\\BusPlus\\FormaStanice.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2024-05-23T13:37:46.172Z"
             }
           ]
         },
