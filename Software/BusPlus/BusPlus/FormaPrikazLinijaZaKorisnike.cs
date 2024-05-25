@@ -28,5 +28,10 @@ namespace BusPlus
         {
 
         }
+
+        private void dgvLinije_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

@@ -32,21 +32,21 @@
             this.prikazLinija = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.dgvLinije = new System.Windows.Forms.DataGridView();
-            this.pI2324_nivancic22_DBDataSet = new BusPlus.PI2324_nivancic22_DBDataSet();
-            this.pI2324nivancic22DBDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.autobusneLinijeBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.autobusneLinijeTableAdapter = new BusPlus.PI2324_nivancic22_DBDataSetTableAdapters.AutobusneLinijeTableAdapter();
             this.pocetnaStanicaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.zavrsnaStanicaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.iDlinijeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.brojAutobusaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pocetnoVrijemeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.zavrsnoVrijemeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.autobusneLinijeBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.pI2324nivancic22DBDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.pI2324_nivancic22_DBDataSet = new BusPlus.PI2324_nivancic22_DBDataSet();
+            this.autobusneLinijeTableAdapter = new BusPlus.PI2324_nivancic22_DBDataSetTableAdapters.AutobusneLinijeTableAdapter();
             this.prikazLinija.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLinije)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pI2324_nivancic22_DBDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pI2324nivancic22DBDataSetBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.autobusneLinijeBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pI2324nivancic22DBDataSetBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pI2324_nivancic22_DBDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // prikazLinija
@@ -91,25 +91,7 @@
             this.dgvLinije.Name = "dgvLinije";
             this.dgvLinije.Size = new System.Drawing.Size(677, 280);
             this.dgvLinije.TabIndex = 3;
-            // 
-            // pI2324_nivancic22_DBDataSet
-            // 
-            this.pI2324_nivancic22_DBDataSet.DataSetName = "PI2324_nivancic22_DBDataSet";
-            this.pI2324_nivancic22_DBDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // pI2324nivancic22DBDataSetBindingSource
-            // 
-            this.pI2324nivancic22DBDataSetBindingSource.DataSource = this.pI2324_nivancic22_DBDataSet;
-            this.pI2324nivancic22DBDataSetBindingSource.Position = 0;
-            // 
-            // autobusneLinijeBindingSource
-            // 
-            this.autobusneLinijeBindingSource.DataMember = "AutobusneLinije";
-            this.autobusneLinijeBindingSource.DataSource = this.pI2324nivancic22DBDataSetBindingSource;
-            // 
-            // autobusneLinijeTableAdapter
-            // 
-            this.autobusneLinijeTableAdapter.ClearBeforeFill = true;
+            this.dgvLinije.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvLinije_CellContentClick);
             // 
             // pocetnaStanicaDataGridViewTextBoxColumn
             // 
@@ -147,6 +129,25 @@
             this.zavrsnoVrijemeDataGridViewTextBoxColumn.HeaderText = "ZavrsnoVrijeme";
             this.zavrsnoVrijemeDataGridViewTextBoxColumn.Name = "zavrsnoVrijemeDataGridViewTextBoxColumn";
             // 
+            // autobusneLinijeBindingSource
+            // 
+            this.autobusneLinijeBindingSource.DataMember = "AutobusneLinije";
+            this.autobusneLinijeBindingSource.DataSource = this.pI2324nivancic22DBDataSetBindingSource;
+            // 
+            // pI2324nivancic22DBDataSetBindingSource
+            // 
+            this.pI2324nivancic22DBDataSetBindingSource.DataSource = this.pI2324_nivancic22_DBDataSet;
+            this.pI2324nivancic22DBDataSetBindingSource.Position = 0;
+            // 
+            // pI2324_nivancic22_DBDataSet
+            // 
+            this.pI2324_nivancic22_DBDataSet.DataSetName = "PI2324_nivancic22_DBDataSet";
+            this.pI2324_nivancic22_DBDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // autobusneLinijeTableAdapter
+            // 
+            this.autobusneLinijeTableAdapter.ClearBeforeFill = true;
+            // 
             // FormaPrikazLinijaZaKorisnike
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -160,9 +161,9 @@
             this.prikazLinija.ResumeLayout(false);
             this.prikazLinija.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLinije)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pI2324_nivancic22_DBDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pI2324nivancic22DBDataSetBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.autobusneLinijeBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pI2324nivancic22DBDataSetBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pI2324_nivancic22_DBDataSet)).EndInit();
             this.ResumeLayout(false);
 
         }

@@ -32,23 +32,17 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormaLinije));
             this.prikazLinija = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.dgvLinije = new System.Windows.Forms.DataGridView();
-            this.pocetnaStanicaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.zavrsnaStanicaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.iDlinijeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.brojAutobusaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pocetnoVrijemeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.zavrsnoVrijemeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.autobusneLinijeBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.pI2324_nivancic22_DBDataSet = new BusPlus.PI2324_nivancic22_DBDataSet();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.autobusneLinijeTableAdapter = new BusPlus.PI2324_nivancic22_DBDataSetTableAdapters.AutobusneLinijeTableAdapter();
+            this.dataGridViewLinije = new System.Windows.Forms.DataGridView();
             this.prikazLinija.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvLinije)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.autobusneLinijeBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pI2324_nivancic22_DBDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewLinije)).BeginInit();
             this.SuspendLayout();
             // 
             // prikazLinija
@@ -71,62 +65,6 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "BusPlus";
             // 
-            // dgvLinije
-            // 
-            this.dgvLinije.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.dgvLinije.AutoGenerateColumns = false;
-            this.dgvLinije.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvLinije.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvLinije.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.pocetnaStanicaDataGridViewTextBoxColumn,
-            this.zavrsnaStanicaDataGridViewTextBoxColumn,
-            this.iDlinijeDataGridViewTextBoxColumn,
-            this.brojAutobusaDataGridViewTextBoxColumn,
-            this.pocetnoVrijemeDataGridViewTextBoxColumn,
-            this.zavrsnoVrijemeDataGridViewTextBoxColumn});
-            this.dgvLinije.DataSource = this.autobusneLinijeBindingSource;
-            this.dgvLinije.Location = new System.Drawing.Point(55, 79);
-            this.dgvLinije.Name = "dgvLinije";
-            this.dgvLinije.Size = new System.Drawing.Size(677, 280);
-            this.dgvLinije.TabIndex = 2;
-            // 
-            // pocetnaStanicaDataGridViewTextBoxColumn
-            // 
-            this.pocetnaStanicaDataGridViewTextBoxColumn.DataPropertyName = "PocetnaStanica";
-            this.pocetnaStanicaDataGridViewTextBoxColumn.HeaderText = "PocetnaStanica";
-            this.pocetnaStanicaDataGridViewTextBoxColumn.Name = "pocetnaStanicaDataGridViewTextBoxColumn";
-            // 
-            // zavrsnaStanicaDataGridViewTextBoxColumn
-            // 
-            this.zavrsnaStanicaDataGridViewTextBoxColumn.DataPropertyName = "ZavrsnaStanica";
-            this.zavrsnaStanicaDataGridViewTextBoxColumn.HeaderText = "ZavrsnaStanica";
-            this.zavrsnaStanicaDataGridViewTextBoxColumn.Name = "zavrsnaStanicaDataGridViewTextBoxColumn";
-            // 
-            // iDlinijeDataGridViewTextBoxColumn
-            // 
-            this.iDlinijeDataGridViewTextBoxColumn.DataPropertyName = "ID_linije";
-            this.iDlinijeDataGridViewTextBoxColumn.HeaderText = "ID_linije";
-            this.iDlinijeDataGridViewTextBoxColumn.Name = "iDlinijeDataGridViewTextBoxColumn";
-            // 
-            // brojAutobusaDataGridViewTextBoxColumn
-            // 
-            this.brojAutobusaDataGridViewTextBoxColumn.DataPropertyName = "BrojAutobusa";
-            this.brojAutobusaDataGridViewTextBoxColumn.HeaderText = "BrojAutobusa";
-            this.brojAutobusaDataGridViewTextBoxColumn.Name = "brojAutobusaDataGridViewTextBoxColumn";
-            // 
-            // pocetnoVrijemeDataGridViewTextBoxColumn
-            // 
-            this.pocetnoVrijemeDataGridViewTextBoxColumn.DataPropertyName = "PocetnoVrijeme";
-            this.pocetnoVrijemeDataGridViewTextBoxColumn.HeaderText = "PocetnoVrijeme";
-            this.pocetnoVrijemeDataGridViewTextBoxColumn.Name = "pocetnoVrijemeDataGridViewTextBoxColumn";
-            // 
-            // zavrsnoVrijemeDataGridViewTextBoxColumn
-            // 
-            this.zavrsnoVrijemeDataGridViewTextBoxColumn.DataPropertyName = "ZavrsnoVrijeme";
-            this.zavrsnoVrijemeDataGridViewTextBoxColumn.HeaderText = "ZavrsnoVrijeme";
-            this.zavrsnoVrijemeDataGridViewTextBoxColumn.Name = "zavrsnoVrijemeDataGridViewTextBoxColumn";
-            // 
             // autobusneLinijeBindingSource
             // 
             this.autobusneLinijeBindingSource.DataMember = "AutobusneLinije";
@@ -145,6 +83,7 @@
             this.button1.TabIndex = 3;
             this.button1.Text = "Izmijeni";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -164,30 +103,39 @@
             this.button3.TabIndex = 5;
             this.button3.Text = "Dodaj";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // autobusneLinijeTableAdapter
             // 
             this.autobusneLinijeTableAdapter.ClearBeforeFill = true;
+            // 
+            // dataGridViewLinije
+            // 
+            this.dataGridViewLinije.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewLinije.Location = new System.Drawing.Point(60, 88);
+            this.dataGridViewLinije.Name = "dataGridViewLinije";
+            this.dataGridViewLinije.Size = new System.Drawing.Size(672, 282);
+            this.dataGridViewLinije.TabIndex = 6;
             // 
             // FormaLinije
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.dataGridViewLinije);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.dgvLinije);
             this.Controls.Add(this.prikazLinija);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormaLinije";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Prikaz Linija";
-            this.Load += new System.EventHandler(this.FormaLinije_Load_1);
             this.prikazLinija.ResumeLayout(false);
             this.prikazLinija.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvLinije)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.autobusneLinijeBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pI2324_nivancic22_DBDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewLinije)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -196,18 +144,12 @@
 
         private System.Windows.Forms.Panel prikazLinija;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridView dgvLinije;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private PI2324_nivancic22_DBDataSet pI2324_nivancic22_DBDataSet;
         private System.Windows.Forms.BindingSource autobusneLinijeBindingSource;
         private PI2324_nivancic22_DBDataSetTableAdapters.AutobusneLinijeTableAdapter autobusneLinijeTableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn pocetnaStanicaDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn zavrsnaStanicaDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn iDlinijeDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn brojAutobusaDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn pocetnoVrijemeDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn zavrsnoVrijemeDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridView dataGridViewLinije;
     }
 }

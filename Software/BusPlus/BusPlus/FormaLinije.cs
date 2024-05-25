@@ -29,21 +29,32 @@ namespace BusPlus
         }
         private void ShowLinije()
         {
-            List<Linija> linije = LinijaRepozitorij.GetLinije();
-            dgvLinije.DataSource = linije;
-            dgvLinije.Columns["ID_linije"].DisplayIndex = 0;
-            dgvLinije.Columns["PocetnaStanica"].DisplayIndex = 1;
-            dgvLinije.Columns["ZavrsnaStanica"].DisplayIndex = 2;
-            dgvLinije.Columns["BrojAutobusa"].DisplayIndex = 3;
-            dgvLinije.Columns["PocetnoVrijeme"].DisplayIndex = 4;
-            dgvLinije.Columns["ZavrsnoVrijeme"].DisplayIndex = 5;
+            var linije = LinijaRepozitorij.GetLinije();
+            dataGridViewLinije.DataSource = linije;
+           
+            dataGridViewLinije.Columns["ID_linije"].DisplayIndex = 0;
+            dataGridViewLinije.Columns["PocetnaStanica"].DisplayIndex = 1;
+            dataGridViewLinije.Columns["ZavrsnaStanica"].DisplayIndex = 2;
+            dataGridViewLinije.Columns["BrojAutobusa"].DisplayIndex = 3;
+            dataGridViewLinije.Columns["PocetnoVrijeme"].DisplayIndex = 4;
+            dataGridViewLinije.Columns["ZavrsnoVrijeme"].DisplayIndex = 5;
+            
+        }
+
+        
+
+        private void button1_Click(object sender, EventArgs e)
+        {
 
         }
 
-        private void FormaLinije_Load_1(object sender, EventArgs e)
+        private void dgvLinije_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            // TODO: This line of code loads data into the 'pI2324_nivancic22_DBDataSet.AutobusneLinije' table. You can move, or remove it, as needed.
-            this.autobusneLinijeTableAdapter.Fill(this.pI2324_nivancic22_DBDataSet.AutobusneLinije);
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
 
         }
     }

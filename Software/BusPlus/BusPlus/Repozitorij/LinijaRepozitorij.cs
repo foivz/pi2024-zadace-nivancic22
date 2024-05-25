@@ -6,7 +6,6 @@ using System.Text;
 using System.Threading.Tasks;
 using BusPlus.Klase;
 using System.Data.SqlClient;
-using System.Security.Cryptography.X509Certificates;
 
 namespace BusPlus.Repozitorij
 {
@@ -15,7 +14,7 @@ namespace BusPlus.Repozitorij
         public static Linija GetLinija(int id)
         {
             Linija linija = null;
-            string sql = $"SELECT * FROM Students WHERE ID_linije = {id}";
+            string sql = $"SELECT * FROM AutobusneLinije WHERE ID_linije = {id}";
             DB.OpenConnection();
             var reader = DB.GetDataReader(sql);
             if(reader.HasRows)
@@ -35,11 +34,11 @@ namespace BusPlus.Repozitorij
             var reader = DB.GetDataReader(sql);
             while (reader.Read())
             {
-                Linija linija = CreateObject(reader) ;
+                Linija linija = CreateObject(reader);
                 linije.Add(linija);
             }
             reader.Close();
-            DB.CloseConnection( );
+            DB.CloseConnection();
             return linije;
         }
         private static Linija CreateObject(SqlDataReader reader)
@@ -50,13 +49,13 @@ namespace BusPlus.Repozitorij
             int brBus = int.Parse(reader["BrojAutobusa"].ToString()) ;
             string pocVrijeme = reader["PocetnoVrijeme"].ToString();
             string zavrVrijeme = reader["ZavrsnoVrijeme"].ToString();
-            var linija = new Linija {
+            var linija = new Linija (id, pocStanica, zavrStanica, brBus, pocVrijeme, zavrVrijeme) {
                 ID_linije = id,
                 PocetnaStanica = pocStanica,
                 ZavrsnaStanica = zavrStanica,
                 BrojAutobusa = brBus,
                 PocetnoVrijeme= pocVrijeme,
-                ZavrsnoVrijeme = zavrVrijeme
+                ZavrsnoVrijeme = zavrVrijeme,
             };
             return linija;
         }

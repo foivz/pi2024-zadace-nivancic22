@@ -15,5 +15,15 @@ namespace BusPlus.Klase
         public string PocetnoVrijeme { get; set; }
         public string ZavrsnoVrijeme { get; set; }
 
+        public Linija(int id, string pocStanica, string zavrStanica, int brBus, string pocVrijeme, string zavrVrijeme)
+        {
+            ID_linije = id;
+            PocetnaStanica = pocStanica;
+            ZavrsnaStanica = zavrStanica;
+            BrojAutobusa = brBus;
+            PocetnoVrijeme = pocVrijeme;
+            ZavrsnoVrijeme = zavrVrijeme;
+        }
     }
+    
 }
