@@ -39,10 +39,12 @@
             this.button3 = new System.Windows.Forms.Button();
             this.autobusneLinijeTableAdapter = new BusPlus.PI2324_nivancic22_DBDataSetTableAdapters.AutobusneLinijeTableAdapter();
             this.dataGridViewLinije = new System.Windows.Forms.DataGridView();
+            this.pI2324nivancic22DBDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.prikazLinija.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.autobusneLinijeBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pI2324_nivancic22_DBDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewLinije)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pI2324nivancic22DBDataSetBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // prikazLinija
@@ -117,6 +119,11 @@
             this.dataGridViewLinije.Size = new System.Drawing.Size(672, 282);
             this.dataGridViewLinije.TabIndex = 6;
             // 
+            // pI2324nivancic22DBDataSetBindingSource
+            // 
+            this.pI2324nivancic22DBDataSetBindingSource.DataSource = this.pI2324_nivancic22_DBDataSet;
+            this.pI2324nivancic22DBDataSetBindingSource.Position = 0;
+            // 
             // FormaLinije
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -136,6 +143,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.autobusneLinijeBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pI2324_nivancic22_DBDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewLinije)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pI2324nivancic22DBDataSetBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -151,5 +159,6 @@
         private System.Windows.Forms.BindingSource autobusneLinijeBindingSource;
         private PI2324_nivancic22_DBDataSetTableAdapters.AutobusneLinijeTableAdapter autobusneLinijeTableAdapter;
         private System.Windows.Forms.DataGridView dataGridViewLinije;
+        private System.Windows.Forms.BindingSource pI2324nivancic22DBDataSetBindingSource;
     }
 }

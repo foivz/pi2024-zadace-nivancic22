@@ -37,7 +37,7 @@ namespace BusPlus
             }
             else if(username == "zaposlenik" && password == "lozinka")
             {
-                FormaLinije formalinije = new FormaLinije();
+                FormaPregledLinija formalinije = new FormaPregledLinija();
                 Hide();
                 formalinije.ShowDialog();
                 Close();

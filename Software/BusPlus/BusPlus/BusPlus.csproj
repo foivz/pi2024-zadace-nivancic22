@@ -61,6 +61,12 @@
     <Compile Include="FormaLinije.Designer.cs">
       <DependentUpon>FormaLinije.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormaPregledLinija.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormaPregledLinija.Designer.cs">
+      <DependentUpon>FormaPregledLinija.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormaPrikazLinijaZaKorisnike.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -82,6 +88,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormaLinije.resx">
       <DependentUpon>FormaLinije.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormaPregledLinija.resx">
+      <DependentUpon>FormaPregledLinija.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormaPrikazLinijaZaKorisnike.resx">
       <DependentUpon>FormaPrikazLinijaZaKorisnike.cs</DependentUpon>
