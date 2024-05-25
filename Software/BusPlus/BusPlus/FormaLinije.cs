@@ -1,4 +1,5 @@
-﻿using BusPlus.Repozitorij;
+﻿using BusPlus.Klase;
+using BusPlus.Repozitorij;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -28,9 +29,22 @@ namespace BusPlus
         }
         private void ShowLinije()
         {
-            var linije = LinijaRepozitorij.GetLinije();
+            List<Linija> linije = LinijaRepozitorij.GetLinije();
             dgvLinije.DataSource = linije;
             dgvLinije.Columns["ID_linije"].DisplayIndex = 0;
+            dgvLinije.Columns["PocetnaStanica"].DisplayIndex = 1;
+            dgvLinije.Columns["ZavrsnaStanica"].DisplayIndex = 2;
+            dgvLinije.Columns["BrojAutobusa"].DisplayIndex = 3;
+            dgvLinije.Columns["PocetnoVrijeme"].DisplayIndex = 4;
+            dgvLinije.Columns["ZavrsnoVrijeme"].DisplayIndex = 5;
+
+        }
+
+        private void FormaLinije_Load_1(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'pI2324_nivancic22_DBDataSet.AutobusneLinije' table. You can move, or remove it, as needed.
+            this.autobusneLinijeTableAdapter.Fill(this.pI2324_nivancic22_DBDataSet.AutobusneLinije);
+
         }
     }
 }

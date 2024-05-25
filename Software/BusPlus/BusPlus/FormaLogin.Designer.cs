@@ -33,7 +33,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.korime = new System.Windows.Forms.Label();
             this.lozinka = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.prijavaGumb = new System.Windows.Forms.Button();
             this.korimeTextbox = new System.Windows.Forms.TextBox();
             this.lozinkaTextbox = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
@@ -81,16 +81,16 @@
             this.lozinka.Text = "Lozinka: ";
             this.lozinka.Click += new System.EventHandler(this.label3_Click);
             // 
-            // button1
+            // prijavaGumb
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button1.Location = new System.Drawing.Point(289, 193);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(104, 29);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Prijavi se";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.prijavaGumb.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.prijavaGumb.Location = new System.Drawing.Point(289, 193);
+            this.prijavaGumb.Name = "prijavaGumb";
+            this.prijavaGumb.Size = new System.Drawing.Size(104, 29);
+            this.prijavaGumb.TabIndex = 3;
+            this.prijavaGumb.Text = "Prijavi se";
+            this.prijavaGumb.UseVisualStyleBackColor = true;
+            this.prijavaGumb.Click += new System.EventHandler(this.button1_Click);
             // 
             // korimeTextbox
             // 
@@ -111,21 +111,21 @@
             this.lozinkaTextbox.UseSystemPasswordChar = true;
             this.lozinkaTextbox.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
-            // Form1
+            // FormaLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(508, 295);
             this.Controls.Add(this.lozinkaTextbox);
             this.Controls.Add(this.korimeTextbox);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.prijavaGumb);
             this.Controls.Add(this.lozinka);
             this.Controls.Add(this.korime);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "Form1";
+            this.Name = "FormaLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.panel1.ResumeLayout(false);
@@ -141,7 +141,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label korime;
         private System.Windows.Forms.Label lozinka;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button prijavaGumb;
         private System.Windows.Forms.TextBox korimeTextbox;
         private System.Windows.Forms.TextBox lozinkaTextbox;
     }

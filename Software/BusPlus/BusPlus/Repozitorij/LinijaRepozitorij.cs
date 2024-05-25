@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using BusPlus.Klase;
 using System.Data.SqlClient;
+using System.Security.Cryptography.X509Certificates;
 
 namespace BusPlus.Repozitorij
 {
@@ -44,10 +45,18 @@ namespace BusPlus.Repozitorij
         private static Linija CreateObject(SqlDataReader reader)
         {
             int id = int.Parse(reader["ID_linije"].ToString());
-            
+            string pocStanica = reader["PocetnaStanica"].ToString();
+            string zavrStanica = reader["ZavrsnaStanica"].ToString() ;
+            int brBus = int.Parse(reader["BrojAutobusa"].ToString()) ;
+            string pocVrijeme = reader["PocetnoVrijeme"].ToString();
+            string zavrVrijeme = reader["ZavrsnoVrijeme"].ToString();
             var linija = new Linija {
-                ID_linije = id
-            
+                ID_linije = id,
+                PocetnaStanica = pocStanica,
+                ZavrsnaStanica = zavrStanica,
+                BrojAutobusa = brBus,
+                PocetnoVrijeme= pocVrijeme,
+                ZavrsnoVrijeme = zavrVrijeme
             };
             return linija;
         }
