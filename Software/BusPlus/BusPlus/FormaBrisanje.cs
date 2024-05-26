@@ -28,11 +28,19 @@ namespace BusPlus
             else
             {
                 LinijaRepozitorij.IzbrisiLiniju(int.Parse(idLin.Text));
-                Close();
+                Hide();
                 FormaPregledLinija formapregled = new FormaPregledLinija();
                 formapregled.ShowDialog();
                 Close();
             }
+        }
+
+        private void povratakGumb_Click(object sender, EventArgs e)
+        {
+            Hide();
+            FormaPregledLinija formaPregledLinija = new FormaPregledLinija();
+            formaPregledLinija.ShowDialog();
+            Close();
         }
     }
 }

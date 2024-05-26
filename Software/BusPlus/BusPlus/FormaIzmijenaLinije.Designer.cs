@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormaIzmijenaLinije));
             this.izmijeniGumb = new System.Windows.Forms.Button();
             this.prikazLinija = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
@@ -43,6 +44,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.pocStan = new System.Windows.Forms.TextBox();
+            this.povratakGumb = new System.Windows.Forms.Button();
             this.prikazLinija.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -184,11 +186,23 @@
             this.pocStan.Size = new System.Drawing.Size(220, 22);
             this.pocStan.TabIndex = 19;
             // 
+            // povratakGumb
+            // 
+            this.povratakGumb.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.povratakGumb.Location = new System.Drawing.Point(453, 62);
+            this.povratakGumb.Name = "povratakGumb";
+            this.povratakGumb.Size = new System.Drawing.Size(83, 22);
+            this.povratakGumb.TabIndex = 1;
+            this.povratakGumb.Text = "Povratak";
+            this.povratakGumb.UseVisualStyleBackColor = true;
+            this.povratakGumb.Click += new System.EventHandler(this.povratakGumb_Click);
+            // 
             // FormaIzmijenaLinije
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(548, 387);
+            this.Controls.Add(this.povratakGumb);
             this.Controls.Add(this.izmijeniGumb);
             this.Controls.Add(this.prikazLinija);
             this.Controls.Add(this.idLin);
@@ -203,6 +217,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pocStan);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FormaIzmijenaLinije";
@@ -232,5 +247,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox pocStan;
+        private System.Windows.Forms.Button povratakGumb;
     }
 }

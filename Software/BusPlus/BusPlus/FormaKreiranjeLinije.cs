@@ -49,7 +49,7 @@ namespace BusPlus
             {
                 if(regex.IsMatch(pocVr.Text) && regex.IsMatch(zavrVr.Text)){
                     LinijaRepozitorij.UbaciLiniju(int.Parse(idLin.Text), pocStan.Text, zavrStan.Text, int.Parse(brBus.Text), pocVr.Text, zavrVr.Text);
-                    Close();
+                    Hide();
                     FormaPregledLinija formaPregled = new FormaPregledLinija();
                     formaPregled.ShowDialog();
                     Close(); 
@@ -119,6 +119,14 @@ namespace BusPlus
         private void idLin_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void povratakGumb_Click(object sender, EventArgs e)
+        {
+            Hide();
+            FormaPregledLinija formaPregledLinija = new FormaPregledLinija();
+            formaPregledLinija.ShowDialog();
+            Close();
         }
     }
 }

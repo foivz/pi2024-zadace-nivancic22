@@ -35,6 +35,7 @@
             this.brisiGumb = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.idLin = new System.Windows.Forms.TextBox();
+            this.povratakGumb = new System.Windows.Forms.Button();
             this.prikazLinija.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -97,11 +98,23 @@
             this.idLin.Size = new System.Drawing.Size(86, 21);
             this.idLin.TabIndex = 20;
             // 
+            // povratakGumb
+            // 
+            this.povratakGumb.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.povratakGumb.Location = new System.Drawing.Point(295, 62);
+            this.povratakGumb.Name = "povratakGumb";
+            this.povratakGumb.Size = new System.Drawing.Size(83, 22);
+            this.povratakGumb.TabIndex = 21;
+            this.povratakGumb.Text = "Povratak";
+            this.povratakGumb.UseVisualStyleBackColor = true;
+            this.povratakGumb.Click += new System.EventHandler(this.povratakGumb_Click);
+            // 
             // FormaBrisanje
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(390, 285);
+            this.Controls.Add(this.povratakGumb);
             this.Controls.Add(this.idLin);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.brisiGumb);
@@ -129,5 +142,6 @@
         private System.Windows.Forms.Button brisiGumb;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox idLin;
+        private System.Windows.Forms.Button povratakGumb;
     }
 }

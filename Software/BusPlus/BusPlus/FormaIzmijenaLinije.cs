@@ -38,10 +38,10 @@ namespace BusPlus
                     if (regex.IsMatch(pocVr.Text) && regex.IsMatch(zavrVr.Text))
                     {
                         LinijaRepozitorij.AzurirajLiniju(int.Parse(idLin.Text), pocStan.Text, zavrStan.Text, int.Parse(brBus.Text), pocVr.Text, zavrVr.Text);
-                        Close();
+                        Hide();
                         FormaPregledLinija formaPregled = new FormaPregledLinija();
                         formaPregled.ShowDialog();
-                    Close();
+                        Close();
                     }
                     else
                     {
@@ -49,6 +49,14 @@ namespace BusPlus
                     }
                 }
             
+        }
+
+        private void povratakGumb_Click(object sender, EventArgs e)
+        {
+            Hide();
+            FormaPregledLinija formaPregledLinija = new FormaPregledLinija();
+            formaPregledLinija.ShowDialog();
+            Close();
         }
     }
 }

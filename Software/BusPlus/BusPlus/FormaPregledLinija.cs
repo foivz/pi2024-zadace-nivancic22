@@ -32,14 +32,15 @@ namespace BusPlus
         private void Button3_Click(object sender, EventArgs e)
         {
             FormaKreiranjeLinije formaNovaLinija = new FormaKreiranjeLinije();
+            Hide();
             formaNovaLinija.ShowDialog();
-
+            Close();
         }
 
         private void gumbIzmijeni_Click(object sender, EventArgs e)
         {
-            Close();
             FormaIzmijenaLinije formaIzmijena = new FormaIzmijenaLinije();
+            Hide();
             formaIzmijena.ShowDialog();
             Close();
         }
@@ -47,15 +48,15 @@ namespace BusPlus
        
         private void odjavaGumb_Click(object sender, EventArgs e)
         {
-            FormaLogin formalogin = new FormaLogin();
             Hide();
+            FormaLogin formalogin = new FormaLogin();
             formalogin.ShowDialog();
             Close();
         }
 
         private void brisiGumb_Click(object sender, EventArgs e)
         {
-            Close();
+            Hide();
             FormaBrisanje formabrisanje = new FormaBrisanje();
             formabrisanje.ShowDialog();
             Close();
