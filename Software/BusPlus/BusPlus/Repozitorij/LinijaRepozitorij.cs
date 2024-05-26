@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using BusPlus.Klase;
 using System.Data.SqlClient;
+using System.Windows.Forms;
 
 namespace BusPlus.Repozitorij
 {
@@ -59,17 +60,17 @@ namespace BusPlus.Repozitorij
             };
             return linija;
         }
-        public static void ubaciLiniju(Linija linija, int id, string pocstan, string zavrstan, int brbus, string pocvreme, string zavrvreme)
+        public static void ubaciLiniju(int id, string pocstan, string zavrstan, int brbus, string pocvreme, string zavrvreme)
         {
             
-            string uvjet = $"INSERT INTO AutobusneLinije (ID_linije, PocetnaStanica, ZavrsnaStanica, BrojAutobusa, PocetnoVrijeme, ZavrsnoVrijeme) VALUES ({id}, {pocstan}, {zavrstan}, {brbus}, {pocvreme}, {zavrvreme})";
+            string uvjet = $"INSERT INTO AutobusneLinije (ID_linije, PocetnaStanica, ZavrsnaStanica, BrojAutobusa, PocetnoVrijeme, ZavrsnoVrijeme) VALUES ('{id}', '{pocstan}', '{zavrstan}', '{brbus}', '{pocvreme}', '{zavrvreme}')";
             DB.OpenConnection();
             DB.ExecuteCommand(uvjet);
             DB.CloseConnection();
         }
-        public static void azurirajLiniju(Linija linija, int id, string pocstan, string zavrstan, int brbus, string pocvreme, string zavrvreme)
+        public static void azurirajLiniju(int id, string pocstan, string zavrstan, int brbus, string pocvreme, string zavrvreme)
         { 
-            string uvjet = $"UPDATE AutobusneLinije SET ID_linije = {id}, PocetnaStanica = {pocstan}, ZavrsnaStanica = {zavrstan}, BrojAutobusa = {brbus}, PocetnoVrijeme = {pocvreme}, ZavrsnoVrijeme = {zavrvreme}";
+            string uvjet = $"UPDATE AutobusneLinije SET PocetnaStanica = '{pocstan}', ZavrsnaStanica = '{zavrstan}', BrojAutobusa = '{brbus}', PocetnoVrijeme = '{pocvreme}', ZavrsnoVrijeme = '{zavrvreme}' WHERE ID_linije = '{id}'";
             DB.OpenConnection();
             DB.ExecuteCommand(uvjet);
             DB.CloseConnection( );

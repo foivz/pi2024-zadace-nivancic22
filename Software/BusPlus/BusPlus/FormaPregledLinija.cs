@@ -38,7 +38,7 @@ namespace BusPlus
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void zavrVr_TextChanged(object sender, EventArgs e)
@@ -99,6 +99,14 @@ namespace BusPlus
         private void label2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void odjavaGumb_Click(object sender, EventArgs e)
+        {
+            FormaLogin formalogin = new FormaLogin();
+            Hide();
+            formalogin.ShowDialog();
+            Close();
         }
     }
 }

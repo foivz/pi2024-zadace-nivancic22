@@ -39,8 +39,7 @@ namespace BusPlus
             }
             else
             {
-                Linija linija = new Linija(int.Parse(idLin.Text), pocStan.Text, zavrStan.Text, int.Parse(brBus.Text), pocVr.Text, zavrVr.Text);
-                LinijaRepozitorij.ubaciLiniju(linija, int.Parse(idLin.Text), pocStan.Text, zavrStan.Text, int.Parse(brBus.Text), pocVr.Text, zavrVr.Text);
+                LinijaRepozitorij.ubaciLiniju(int.Parse(idLin.Text), pocStan.Text, zavrStan.Text, int.Parse(brBus.Text), pocVr.Text, zavrVr.Text);
             }
         }
     }

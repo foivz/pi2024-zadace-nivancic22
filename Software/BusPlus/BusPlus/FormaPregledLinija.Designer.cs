@@ -35,6 +35,7 @@
             this.dodajGumb = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.gumbIzmijeni = new System.Windows.Forms.Button();
+            this.odjavaGumb = new System.Windows.Forms.Button();
             this.prikazLinija.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLinije)).BeginInit();
             this.SuspendLayout();
@@ -42,6 +43,7 @@
             // prikazLinija
             // 
             this.prikazLinija.BackColor = System.Drawing.Color.Maroon;
+            this.prikazLinija.Controls.Add(this.odjavaGumb);
             this.prikazLinija.Controls.Add(this.label1);
             this.prikazLinija.Location = new System.Drawing.Point(0, 0);
             this.prikazLinija.Name = "prikazLinija";
@@ -102,6 +104,20 @@
             this.gumbIzmijeni.UseVisualStyleBackColor = true;
             this.gumbIzmijeni.Click += new System.EventHandler(this.button1_Click);
             // 
+            // odjavaGumb
+            // 
+            this.odjavaGumb.BackColor = System.Drawing.Color.Transparent;
+            this.odjavaGumb.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.odjavaGumb.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.odjavaGumb.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.odjavaGumb.Location = new System.Drawing.Point(642, 12);
+            this.odjavaGumb.Name = "odjavaGumb";
+            this.odjavaGumb.Size = new System.Drawing.Size(96, 30);
+            this.odjavaGumb.TabIndex = 2;
+            this.odjavaGumb.Text = "Odjava";
+            this.odjavaGumb.UseVisualStyleBackColor = false;
+            this.odjavaGumb.Click += new System.EventHandler(this.odjavaGumb_Click);
+            // 
             // FormaPregledLinija
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -132,5 +148,6 @@
         private System.Windows.Forms.Button dodajGumb;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button gumbIzmijeni;
+        private System.Windows.Forms.Button odjavaGumb;
     }
 }

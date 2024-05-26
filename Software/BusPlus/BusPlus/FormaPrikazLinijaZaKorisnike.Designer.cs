@@ -42,6 +42,7 @@
             this.pI2324nivancic22DBDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.pI2324_nivancic22_DBDataSet = new BusPlus.PI2324_nivancic22_DBDataSet();
             this.autobusneLinijeTableAdapter = new BusPlus.PI2324_nivancic22_DBDataSetTableAdapters.AutobusneLinijeTableAdapter();
+            this.odjavaGumb = new System.Windows.Forms.Button();
             this.prikazLinija.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLinije)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.autobusneLinijeBindingSource)).BeginInit();
@@ -52,6 +53,7 @@
             // prikazLinija
             // 
             this.prikazLinija.BackColor = System.Drawing.Color.Maroon;
+            this.prikazLinija.Controls.Add(this.odjavaGumb);
             this.prikazLinija.Controls.Add(this.label1);
             this.prikazLinija.Location = new System.Drawing.Point(1, 0);
             this.prikazLinija.Name = "prikazLinija";
@@ -155,6 +157,20 @@
             // 
             this.autobusneLinijeTableAdapter.ClearBeforeFill = true;
             // 
+            // odjavaGumb
+            // 
+            this.odjavaGumb.BackColor = System.Drawing.Color.Transparent;
+            this.odjavaGumb.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.odjavaGumb.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.odjavaGumb.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.odjavaGumb.Location = new System.Drawing.Point(691, 12);
+            this.odjavaGumb.Name = "odjavaGumb";
+            this.odjavaGumb.Size = new System.Drawing.Size(96, 30);
+            this.odjavaGumb.TabIndex = 4;
+            this.odjavaGumb.Text = "Odjava";
+            this.odjavaGumb.UseVisualStyleBackColor = false;
+            this.odjavaGumb.Click += new System.EventHandler(this.odjavaGumb_Click);
+            // 
             // FormaPrikazLinijaZaKorisnike
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -163,6 +179,7 @@
             this.Controls.Add(this.dgvLinije);
             this.Controls.Add(this.prikazLinija);
             this.Name = "FormaPrikazLinijaZaKorisnike";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormaPrikazLinijaZaKorisnike";
             this.Load += new System.EventHandler(this.FormaPrikazLinijaZaKorisnike_Load);
             this.prikazLinija.ResumeLayout(false);
@@ -190,5 +207,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn brojAutobusaDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn pocetnoVrijemeDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn zavrsnoVrijemeDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Button odjavaGumb;
     }
 }

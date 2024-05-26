@@ -33,5 +33,13 @@ namespace BusPlus
         {
 
         }
+
+        private void odjavaGumb_Click(object sender, EventArgs e)
+        {
+            FormaLogin formalogin = new FormaLogin();
+            Hide();
+            formalogin.ShowDialog();
+            Close();
+        }
     }
 }
