@@ -32,12 +32,6 @@
             this.prikazLinija = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.dgvLinije = new System.Windows.Forms.DataGridView();
-            this.pocetnaStanicaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.zavrsnaStanicaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.iDlinijeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.brojAutobusaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pocetnoVrijemeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.zavrsnoVrijemeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.autobusneLinijeBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.pI2324nivancic22DBDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.pI2324_nivancic22_DBDataSet = new BusPlus.PI2324_nivancic22_DBDataSet();
@@ -78,65 +72,14 @@
             this.dgvLinije.AllowUserToDeleteRows = false;
             this.dgvLinije.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.dgvLinije.AutoGenerateColumns = false;
             this.dgvLinije.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvLinije.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvLinije.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.pocetnaStanicaDataGridViewTextBoxColumn,
-            this.zavrsnaStanicaDataGridViewTextBoxColumn,
-            this.iDlinijeDataGridViewTextBoxColumn,
-            this.brojAutobusaDataGridViewTextBoxColumn,
-            this.pocetnoVrijemeDataGridViewTextBoxColumn,
-            this.zavrsnoVrijemeDataGridViewTextBoxColumn});
-            this.dgvLinije.DataSource = this.autobusneLinijeBindingSource;
             this.dgvLinije.Location = new System.Drawing.Point(60, 95);
             this.dgvLinije.Name = "dgvLinije";
             this.dgvLinije.ReadOnly = true;
             this.dgvLinije.Size = new System.Drawing.Size(677, 280);
             this.dgvLinije.TabIndex = 3;
             this.dgvLinije.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvLinije_CellContentClick);
-            // 
-            // pocetnaStanicaDataGridViewTextBoxColumn
-            // 
-            this.pocetnaStanicaDataGridViewTextBoxColumn.DataPropertyName = "PocetnaStanica";
-            this.pocetnaStanicaDataGridViewTextBoxColumn.HeaderText = "PocetnaStanica";
-            this.pocetnaStanicaDataGridViewTextBoxColumn.Name = "pocetnaStanicaDataGridViewTextBoxColumn";
-            this.pocetnaStanicaDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // zavrsnaStanicaDataGridViewTextBoxColumn
-            // 
-            this.zavrsnaStanicaDataGridViewTextBoxColumn.DataPropertyName = "ZavrsnaStanica";
-            this.zavrsnaStanicaDataGridViewTextBoxColumn.HeaderText = "ZavrsnaStanica";
-            this.zavrsnaStanicaDataGridViewTextBoxColumn.Name = "zavrsnaStanicaDataGridViewTextBoxColumn";
-            this.zavrsnaStanicaDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // iDlinijeDataGridViewTextBoxColumn
-            // 
-            this.iDlinijeDataGridViewTextBoxColumn.DataPropertyName = "ID_linije";
-            this.iDlinijeDataGridViewTextBoxColumn.HeaderText = "ID_linije";
-            this.iDlinijeDataGridViewTextBoxColumn.Name = "iDlinijeDataGridViewTextBoxColumn";
-            this.iDlinijeDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // brojAutobusaDataGridViewTextBoxColumn
-            // 
-            this.brojAutobusaDataGridViewTextBoxColumn.DataPropertyName = "BrojAutobusa";
-            this.brojAutobusaDataGridViewTextBoxColumn.HeaderText = "BrojAutobusa";
-            this.brojAutobusaDataGridViewTextBoxColumn.Name = "brojAutobusaDataGridViewTextBoxColumn";
-            this.brojAutobusaDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // pocetnoVrijemeDataGridViewTextBoxColumn
-            // 
-            this.pocetnoVrijemeDataGridViewTextBoxColumn.DataPropertyName = "PocetnoVrijeme";
-            this.pocetnoVrijemeDataGridViewTextBoxColumn.HeaderText = "PocetnoVrijeme";
-            this.pocetnoVrijemeDataGridViewTextBoxColumn.Name = "pocetnoVrijemeDataGridViewTextBoxColumn";
-            this.pocetnoVrijemeDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // zavrsnoVrijemeDataGridViewTextBoxColumn
-            // 
-            this.zavrsnoVrijemeDataGridViewTextBoxColumn.DataPropertyName = "ZavrsnoVrijeme";
-            this.zavrsnoVrijemeDataGridViewTextBoxColumn.HeaderText = "ZavrsnoVrijeme";
-            this.zavrsnoVrijemeDataGridViewTextBoxColumn.Name = "zavrsnoVrijemeDataGridViewTextBoxColumn";
-            this.zavrsnoVrijemeDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // autobusneLinijeBindingSource
             // 
@@ -201,12 +144,6 @@
         private PI2324_nivancic22_DBDataSet pI2324_nivancic22_DBDataSet;
         private System.Windows.Forms.BindingSource autobusneLinijeBindingSource;
         private PI2324_nivancic22_DBDataSetTableAdapters.AutobusneLinijeTableAdapter autobusneLinijeTableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn pocetnaStanicaDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn zavrsnaStanicaDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn iDlinijeDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn brojAutobusaDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn pocetnoVrijemeDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn zavrsnoVrijemeDataGridViewTextBoxColumn;
         private System.Windows.Forms.Button odjavaGumb;
     }
 }

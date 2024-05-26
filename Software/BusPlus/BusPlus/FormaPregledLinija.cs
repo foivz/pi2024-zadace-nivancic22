@@ -36,77 +36,34 @@ namespace BusPlus
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void gumbIzmijeni_Click(object sender, EventArgs e)
         {
-            
+            Close();
+            FormaIzmijenaLinije formaIzmijena = new FormaIzmijenaLinije();
+            formaIzmijena.ShowDialog();
+            Close();
         }
 
-        private void zavrVr_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void zavrStan_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void idLin_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void brBus_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pocVr_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label7_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pocStan_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
+       
         private void odjavaGumb_Click(object sender, EventArgs e)
         {
             FormaLogin formalogin = new FormaLogin();
             Hide();
             formalogin.ShowDialog();
             Close();
+        }
+
+        private void brisiGumb_Click(object sender, EventArgs e)
+        {
+            Close();
+            FormaBrisanje formabrisanje = new FormaBrisanje();
+            formabrisanje.ShowDialog();
+            Close();
+        }
+
+        private void dgvLinije_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

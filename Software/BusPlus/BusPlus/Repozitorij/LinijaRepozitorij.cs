@@ -60,20 +60,27 @@ namespace BusPlus.Repozitorij
             };
             return linija;
         }
-        public static void ubaciLiniju(int id, string pocstan, string zavrstan, int brbus, string pocvreme, string zavrvreme)
+        public static void UbaciLiniju(int id, string pocstan, string zavrstan, int brbus, string pocvreme, string zavrvreme)
         {
             
-            string uvjet = $"INSERT INTO AutobusneLinije (ID_linije, PocetnaStanica, ZavrsnaStanica, BrojAutobusa, PocetnoVrijeme, ZavrsnoVrijeme) VALUES ('{id}', '{pocstan}', '{zavrstan}', '{brbus}', '{pocvreme}', '{zavrvreme}')";
+            string uvjet = $"INSERT INTO AutobusneLinije (ID_linije, PocetnaStanica, ZavrsnaStanica, BrojAutobusa, PocetnoVrijeme, ZavrsnoVrijeme) VALUES ({id}, '{pocstan}', '{zavrstan}', {brbus}, '{pocvreme}', '{zavrvreme}')";
             DB.OpenConnection();
             DB.ExecuteCommand(uvjet);
             DB.CloseConnection();
         }
-        public static void azurirajLiniju(int id, string pocstan, string zavrstan, int brbus, string pocvreme, string zavrvreme)
+        public static void AzurirajLiniju(int id, string pocstan, string zavrstan, int brbus, string pocvreme, string zavrvreme)
         { 
-            string uvjet = $"UPDATE AutobusneLinije SET PocetnaStanica = '{pocstan}', ZavrsnaStanica = '{zavrstan}', BrojAutobusa = '{brbus}', PocetnoVrijeme = '{pocvreme}', ZavrsnoVrijeme = '{zavrvreme}' WHERE ID_linije = '{id}'";
+            string uvjet = $"UPDATE AutobusneLinije SET PocetnaStanica = '{pocstan}', ZavrsnaStanica = '{zavrstan}', BrojAutobusa = {brbus}, PocetnoVrijeme = '{pocvreme}', ZavrsnoVrijeme = '{zavrvreme}' WHERE ID_linije = {id}";
             DB.OpenConnection();
             DB.ExecuteCommand(uvjet);
             DB.CloseConnection( );
+        }
+        public static void IzbrisiLiniju(int id)
+        {
+            string sql = $"DELETE FROM AutobusneLinije WHERE ID_linije = '{id}'";
+            DB.OpenConnection();
+            DB.ExecuteCommand(sql); 
+            DB.CloseConnection();
         }
     }
 }

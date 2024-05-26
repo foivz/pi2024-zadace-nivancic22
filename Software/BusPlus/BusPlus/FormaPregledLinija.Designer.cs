@@ -33,7 +33,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.dgvLinije = new System.Windows.Forms.DataGridView();
             this.dodajGumb = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.brisiGumb = new System.Windows.Forms.Button();
             this.gumbIzmijeni = new System.Windows.Forms.Button();
             this.odjavaGumb = new System.Windows.Forms.Button();
             this.prikazLinija.SuspendLayout();
@@ -74,6 +74,7 @@
             this.dgvLinije.ReadOnly = true;
             this.dgvLinije.Size = new System.Drawing.Size(672, 319);
             this.dgvLinije.TabIndex = 3;
+            this.dgvLinije.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvLinije_CellContentClick);
             // 
             // dodajGumb
             // 
@@ -85,14 +86,15 @@
             this.dodajGumb.UseVisualStyleBackColor = true;
             this.dodajGumb.Click += new System.EventHandler(this.Button3_Click);
             // 
-            // button2
+            // brisiGumb
             // 
-            this.button2.Location = new System.Drawing.Point(463, 426);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(120, 31);
-            this.button2.TabIndex = 7;
-            this.button2.Text = "Izbriši";
-            this.button2.UseVisualStyleBackColor = true;
+            this.brisiGumb.Location = new System.Drawing.Point(463, 426);
+            this.brisiGumb.Name = "brisiGumb";
+            this.brisiGumb.Size = new System.Drawing.Size(120, 31);
+            this.brisiGumb.TabIndex = 7;
+            this.brisiGumb.Text = "Izbriši";
+            this.brisiGumb.UseVisualStyleBackColor = true;
+            this.brisiGumb.Click += new System.EventHandler(this.brisiGumb_Click);
             // 
             // gumbIzmijeni
             // 
@@ -102,7 +104,7 @@
             this.gumbIzmijeni.TabIndex = 6;
             this.gumbIzmijeni.Text = "Izmijeni";
             this.gumbIzmijeni.UseVisualStyleBackColor = true;
-            this.gumbIzmijeni.Click += new System.EventHandler(this.button1_Click);
+            this.gumbIzmijeni.Click += new System.EventHandler(this.gumbIzmijeni_Click);
             // 
             // odjavaGumb
             // 
@@ -124,7 +126,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(750, 498);
             this.Controls.Add(this.dodajGumb);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.brisiGumb);
             this.Controls.Add(this.gumbIzmijeni);
             this.Controls.Add(this.dgvLinije);
             this.Controls.Add(this.prikazLinija);
@@ -146,7 +148,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dgvLinije;
         private System.Windows.Forms.Button dodajGumb;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button brisiGumb;
         private System.Windows.Forms.Button gumbIzmijeni;
         private System.Windows.Forms.Button odjavaGumb;
     }

@@ -55,6 +55,7 @@
             this.prikazLinija.Name = "prikazLinija";
             this.prikazLinija.Size = new System.Drawing.Size(813, 56);
             this.prikazLinija.TabIndex = 2;
+            this.prikazLinija.Paint += new System.Windows.Forms.PaintEventHandler(this.prikazLinija_Paint);
             // 
             // label1
             // 
@@ -66,6 +67,7 @@
             this.label1.Size = new System.Drawing.Size(114, 31);
             this.label1.TabIndex = 0;
             this.label1.Text = "BusPlus";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // pocStan
             // 
@@ -74,6 +76,7 @@
             this.pocStan.Name = "pocStan";
             this.pocStan.Size = new System.Drawing.Size(220, 22);
             this.pocStan.TabIndex = 3;
+            this.pocStan.TextChanged += new System.EventHandler(this.pocStan_TextChanged);
             // 
             // label2
             // 
@@ -84,6 +87,7 @@
             this.label2.Size = new System.Drawing.Size(109, 16);
             this.label2.TabIndex = 4;
             this.label2.Text = "Početna stanica: ";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
@@ -94,6 +98,7 @@
             this.label3.Size = new System.Drawing.Size(105, 16);
             this.label3.TabIndex = 5;
             this.label3.Text = "Završna stanica:";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // zavrStan
             // 
@@ -102,6 +107,7 @@
             this.zavrStan.Name = "zavrStan";
             this.zavrStan.Size = new System.Drawing.Size(220, 22);
             this.zavrStan.TabIndex = 6;
+            this.zavrStan.TextChanged += new System.EventHandler(this.zavrStan_TextChanged);
             // 
             // label5
             // 
@@ -121,6 +127,7 @@
             this.brBus.Name = "brBus";
             this.brBus.Size = new System.Drawing.Size(38, 22);
             this.brBus.TabIndex = 10;
+            this.brBus.TextChanged += new System.EventHandler(this.brBus_TextChanged);
             // 
             // label6
             // 
@@ -140,6 +147,7 @@
             this.pocVr.Name = "pocVr";
             this.pocVr.Size = new System.Drawing.Size(124, 22);
             this.pocVr.TabIndex = 12;
+            this.pocVr.TextChanged += new System.EventHandler(this.pocVr_TextChanged);
             // 
             // label7
             // 
@@ -150,6 +158,7 @@
             this.label7.Size = new System.Drawing.Size(106, 16);
             this.label7.TabIndex = 13;
             this.label7.Text = "Završno vrijeme:";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // zavrVr
             // 
@@ -158,6 +167,7 @@
             this.zavrVr.Name = "zavrVr";
             this.zavrVr.Size = new System.Drawing.Size(124, 22);
             this.zavrVr.TabIndex = 14;
+            this.zavrVr.TextChanged += new System.EventHandler(this.zavrVr_TextChanged);
             // 
             // dodaj_gumb
             // 
@@ -178,6 +188,7 @@
             this.label4.Size = new System.Drawing.Size(57, 16);
             this.label4.TabIndex = 16;
             this.label4.Text = "ID Linije:";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // idLin
             // 
@@ -186,6 +197,7 @@
             this.idLin.Name = "idLin";
             this.idLin.Size = new System.Drawing.Size(38, 22);
             this.idLin.TabIndex = 17;
+            this.idLin.TextChanged += new System.EventHandler(this.idLin_TextChanged);
             // 
             // FormaKreiranjeLinije
             // 
