@@ -28,5 +28,77 @@ namespace BusPlus
             List<Linija> linije = LinijaRepozitorij.GetLinije();
             dgvLinije.DataSource = linije;
         }
+
+        private void Button3_Click(object sender, EventArgs e)
+        {
+            FormaKreiranjeLinije formaNovaLinija = new FormaKreiranjeLinije();
+            formaNovaLinija.ShowDialog();
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void zavrVr_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void zavrStan_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void idLin_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void brBus_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pocVr_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pocStan_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

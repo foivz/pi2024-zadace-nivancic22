@@ -89,6 +89,7 @@
             this.dgvLinije.DataSource = this.autobusneLinijeBindingSource;
             this.dgvLinije.Location = new System.Drawing.Point(60, 95);
             this.dgvLinije.Name = "dgvLinije";
+            this.dgvLinije.ReadOnly = true;
             this.dgvLinije.Size = new System.Drawing.Size(677, 280);
             this.dgvLinije.TabIndex = 3;
             this.dgvLinije.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvLinije_CellContentClick);
@@ -98,36 +99,42 @@
             this.pocetnaStanicaDataGridViewTextBoxColumn.DataPropertyName = "PocetnaStanica";
             this.pocetnaStanicaDataGridViewTextBoxColumn.HeaderText = "PocetnaStanica";
             this.pocetnaStanicaDataGridViewTextBoxColumn.Name = "pocetnaStanicaDataGridViewTextBoxColumn";
+            this.pocetnaStanicaDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // zavrsnaStanicaDataGridViewTextBoxColumn
             // 
             this.zavrsnaStanicaDataGridViewTextBoxColumn.DataPropertyName = "ZavrsnaStanica";
             this.zavrsnaStanicaDataGridViewTextBoxColumn.HeaderText = "ZavrsnaStanica";
             this.zavrsnaStanicaDataGridViewTextBoxColumn.Name = "zavrsnaStanicaDataGridViewTextBoxColumn";
+            this.zavrsnaStanicaDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // iDlinijeDataGridViewTextBoxColumn
             // 
             this.iDlinijeDataGridViewTextBoxColumn.DataPropertyName = "ID_linije";
             this.iDlinijeDataGridViewTextBoxColumn.HeaderText = "ID_linije";
             this.iDlinijeDataGridViewTextBoxColumn.Name = "iDlinijeDataGridViewTextBoxColumn";
+            this.iDlinijeDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // brojAutobusaDataGridViewTextBoxColumn
             // 
             this.brojAutobusaDataGridViewTextBoxColumn.DataPropertyName = "BrojAutobusa";
             this.brojAutobusaDataGridViewTextBoxColumn.HeaderText = "BrojAutobusa";
             this.brojAutobusaDataGridViewTextBoxColumn.Name = "brojAutobusaDataGridViewTextBoxColumn";
+            this.brojAutobusaDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // pocetnoVrijemeDataGridViewTextBoxColumn
             // 
             this.pocetnoVrijemeDataGridViewTextBoxColumn.DataPropertyName = "PocetnoVrijeme";
             this.pocetnoVrijemeDataGridViewTextBoxColumn.HeaderText = "PocetnoVrijeme";
             this.pocetnoVrijemeDataGridViewTextBoxColumn.Name = "pocetnoVrijemeDataGridViewTextBoxColumn";
+            this.pocetnoVrijemeDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // zavrsnoVrijemeDataGridViewTextBoxColumn
             // 
             this.zavrsnoVrijemeDataGridViewTextBoxColumn.DataPropertyName = "ZavrsnoVrijeme";
             this.zavrsnoVrijemeDataGridViewTextBoxColumn.HeaderText = "ZavrsnoVrijeme";
             this.zavrsnoVrijemeDataGridViewTextBoxColumn.Name = "zavrsnoVrijemeDataGridViewTextBoxColumn";
+            this.zavrsnoVrijemeDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // autobusneLinijeBindingSource
             // 

@@ -45,9 +45,8 @@ namespace BusPlus
             else if (username == "korisnik" && password == "lozinka")
             {
                 FormaPrikazLinijaZaKorisnike formaPrikaz = new FormaPrikazLinijaZaKorisnike();
-                Hide();
                 formaPrikaz.ShowDialog();
-                Close();
+                
             }
         }
 

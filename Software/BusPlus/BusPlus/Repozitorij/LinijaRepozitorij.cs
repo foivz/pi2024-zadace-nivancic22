@@ -59,5 +59,20 @@ namespace BusPlus.Repozitorij
             };
             return linija;
         }
+        public static void ubaciLiniju(Linija linija, int id, string pocstan, string zavrstan, int brbus, string pocvreme, string zavrvreme)
+        {
+            
+            string uvjet = $"INSERT INTO AutobusneLinije (ID_linije, PocetnaStanica, ZavrsnaStanica, BrojAutobusa, PocetnoVrijeme, ZavrsnoVrijeme) VALUES ({id}, {pocstan}, {zavrstan}, {brbus}, {pocvreme}, {zavrvreme})";
+            DB.OpenConnection();
+            DB.ExecuteCommand(uvjet);
+            DB.CloseConnection();
+        }
+        public static void azurirajLiniju(Linija linija, int id, string pocstan, string zavrstan, int brbus, string pocvreme, string zavrvreme)
+        { 
+            string uvjet = $"UPDATE AutobusneLinije SET ID_linije = {id}, PocetnaStanica = {pocstan}, ZavrsnaStanica = {zavrstan}, BrojAutobusa = {brbus}, PocetnoVrijeme = {pocvreme}, ZavrsnoVrijeme = {zavrvreme}";
+            DB.OpenConnection();
+            DB.ExecuteCommand(uvjet);
+            DB.CloseConnection( );
+        }
     }
 }

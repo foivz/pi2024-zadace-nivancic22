@@ -34,9 +34,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.autobusneLinijeBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.pI2324_nivancic22_DBDataSet = new BusPlus.PI2324_nivancic22_DBDataSet();
-            this.button1 = new System.Windows.Forms.Button();
+            this.izmijeniGumb = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.dodajGumb = new System.Windows.Forms.Button();
             this.autobusneLinijeTableAdapter = new BusPlus.PI2324_nivancic22_DBDataSetTableAdapters.AutobusneLinijeTableAdapter();
             this.dataGridViewLinije = new System.Windows.Forms.DataGridView();
             this.pI2324nivancic22DBDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -77,15 +77,15 @@
             this.pI2324_nivancic22_DBDataSet.DataSetName = "PI2324_nivancic22_DBDataSet";
             this.pI2324_nivancic22_DBDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // button1
+            // izmijeniGumb
             // 
-            this.button1.Location = new System.Drawing.Point(612, 376);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(120, 31);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Izmijeni";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.izmijeniGumb.Location = new System.Drawing.Point(612, 376);
+            this.izmijeniGumb.Name = "izmijeniGumb";
+            this.izmijeniGumb.Size = new System.Drawing.Size(120, 31);
+            this.izmijeniGumb.TabIndex = 3;
+            this.izmijeniGumb.Text = "Izmijeni";
+            this.izmijeniGumb.UseVisualStyleBackColor = true;
+            this.izmijeniGumb.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -97,15 +97,15 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // button3
+            // dodajGumb
             // 
-            this.button3.Location = new System.Drawing.Point(360, 376);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(120, 31);
-            this.button3.TabIndex = 5;
-            this.button3.Text = "Dodaj";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.dodajGumb.Location = new System.Drawing.Point(360, 376);
+            this.dodajGumb.Name = "dodajGumb";
+            this.dodajGumb.Size = new System.Drawing.Size(120, 31);
+            this.dodajGumb.TabIndex = 5;
+            this.dodajGumb.Text = "Dodaj";
+            this.dodajGumb.UseVisualStyleBackColor = true;
+            this.dodajGumb.Click += new System.EventHandler(this.button3_Click);
             // 
             // autobusneLinijeTableAdapter
             // 
@@ -130,9 +130,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.dataGridViewLinije);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.dodajGumb);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.izmijeniGumb);
             this.Controls.Add(this.prikazLinija);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormaLinije";
@@ -152,9 +152,9 @@
 
         private System.Windows.Forms.Panel prikazLinija;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button izmijeniGumb;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button dodajGumb;
         private PI2324_nivancic22_DBDataSet pI2324_nivancic22_DBDataSet;
         private System.Windows.Forms.BindingSource autobusneLinijeBindingSource;
         private PI2324_nivancic22_DBDataSetTableAdapters.AutobusneLinijeTableAdapter autobusneLinijeTableAdapter;
