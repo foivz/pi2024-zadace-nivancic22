@@ -27,6 +27,7 @@ namespace BusPlus
         {
             List<Linija> linije = LinijaRepozitorij.GetLinije();
             dgvLinije.DataSource = linije;
+            dgvLinije.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
         }
 
         private void Button3_Click(object sender, EventArgs e)

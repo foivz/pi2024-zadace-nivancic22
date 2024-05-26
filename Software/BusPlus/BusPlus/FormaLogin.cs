@@ -62,5 +62,10 @@ namespace BusPlus
         {
 
         }
+
+        private void FormaLogin_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

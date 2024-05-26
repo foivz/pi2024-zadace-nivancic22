@@ -30,13 +30,13 @@
         {
             this.components = new System.ComponentModel.Container();
             this.prikazLinija = new System.Windows.Forms.Panel();
+            this.odjavaGumb = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.dgvLinije = new System.Windows.Forms.DataGridView();
             this.autobusneLinijeBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.pI2324nivancic22DBDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.pI2324_nivancic22_DBDataSet = new BusPlus.PI2324_nivancic22_DBDataSet();
             this.autobusneLinijeTableAdapter = new BusPlus.PI2324_nivancic22_DBDataSetTableAdapters.AutobusneLinijeTableAdapter();
-            this.odjavaGumb = new System.Windows.Forms.Button();
             this.prikazLinija.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLinije)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.autobusneLinijeBindingSource)).BeginInit();
@@ -46,6 +46,8 @@
             // 
             // prikazLinija
             // 
+            this.prikazLinija.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.prikazLinija.BackColor = System.Drawing.Color.Maroon;
             this.prikazLinija.Controls.Add(this.odjavaGumb);
             this.prikazLinija.Controls.Add(this.label1);
@@ -54,6 +56,21 @@
             this.prikazLinija.Size = new System.Drawing.Size(813, 56);
             this.prikazLinija.TabIndex = 2;
             this.prikazLinija.Paint += new System.Windows.Forms.PaintEventHandler(this.prikazLinija_Paint);
+            // 
+            // odjavaGumb
+            // 
+            this.odjavaGumb.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.odjavaGumb.BackColor = System.Drawing.Color.Transparent;
+            this.odjavaGumb.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.odjavaGumb.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.odjavaGumb.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.odjavaGumb.Location = new System.Drawing.Point(691, 12);
+            this.odjavaGumb.Name = "odjavaGumb";
+            this.odjavaGumb.Size = new System.Drawing.Size(96, 30);
+            this.odjavaGumb.TabIndex = 4;
+            this.odjavaGumb.Text = "Odjava";
+            this.odjavaGumb.UseVisualStyleBackColor = false;
+            this.odjavaGumb.Click += new System.EventHandler(this.odjavaGumb_Click);
             // 
             // label1
             // 
@@ -70,8 +87,9 @@
             // 
             this.dgvLinije.AllowUserToAddRows = false;
             this.dgvLinije.AllowUserToDeleteRows = false;
-            this.dgvLinije.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
+            this.dgvLinije.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvLinije.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvLinije.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvLinije.Location = new System.Drawing.Point(60, 95);
@@ -99,20 +117,6 @@
             // autobusneLinijeTableAdapter
             // 
             this.autobusneLinijeTableAdapter.ClearBeforeFill = true;
-            // 
-            // odjavaGumb
-            // 
-            this.odjavaGumb.BackColor = System.Drawing.Color.Transparent;
-            this.odjavaGumb.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.odjavaGumb.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.odjavaGumb.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.odjavaGumb.Location = new System.Drawing.Point(691, 12);
-            this.odjavaGumb.Name = "odjavaGumb";
-            this.odjavaGumb.Size = new System.Drawing.Size(96, 30);
-            this.odjavaGumb.TabIndex = 4;
-            this.odjavaGumb.Text = "Odjava";
-            this.odjavaGumb.UseVisualStyleBackColor = false;
-            this.odjavaGumb.Click += new System.EventHandler(this.odjavaGumb_Click);
             // 
             // FormaPrikazLinijaZaKorisnike
             // 

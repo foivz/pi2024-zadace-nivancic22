@@ -59,6 +59,11 @@ namespace BusPlus
                     MessageBox.Show("Netočno upisano vrijeme", "Pogreška", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
             }
+            else
+            {
+                MessageBox.Show("Krivo je upisani ID!", "Pogreška", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
+            }
         }
 
         private void prikazLinija_Paint(object sender, PaintEventArgs e)

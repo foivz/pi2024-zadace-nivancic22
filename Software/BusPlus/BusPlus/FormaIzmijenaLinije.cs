@@ -48,7 +48,12 @@ namespace BusPlus
                         MessageBox.Show("Netočno upisano vrijeme", "Pogreška", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
                 }
-            
+                else
+                {
+                    MessageBox.Show("Ne možete promijeniti liniju koja ne postoji!", "Pogreška", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
+                }
+
         }
 
         private void povratakGumb_Click(object sender, EventArgs e)

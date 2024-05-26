@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BusPlus.Klase
 {
-    public class Linija
+      public class Linija
     {
         public int ID_linije { get; set; }
         public string PocetnaStanica { get; set; }

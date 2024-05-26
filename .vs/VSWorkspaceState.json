@@ -1,7 +1,11 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Software",
+    "\\Software\\BusPlus",
+    "\\Software\\BusPlus\\BusPlus",
+    "\\Software\\BusPlus\\BusPlus\\Klase"
   ],
-  "SelectedNode": "\\BusPlus.sln",
+  "SelectedNode": "\\Software\\BusPlus\\BusPlus\\Klase\\Linija.cs",
   "PreviewInSolutionExplorer": false
 }
