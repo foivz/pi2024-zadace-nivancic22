@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormaPrikazLinijaZaKorisnike));
             this.prikazLinija = new System.Windows.Forms.Panel();
             this.odjavaGumb = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -124,7 +125,6 @@
             // 
             // traziGumb
             // 
-            this.traziGumb.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.traziGumb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.traziGumb.Location = new System.Drawing.Point(389, 84);
             this.traziGumb.Name = "traziGumb";
@@ -136,7 +136,6 @@
             // 
             // traziLabel
             // 
-            this.traziLabel.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.traziLabel.AutoSize = true;
             this.traziLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.traziLabel.Location = new System.Drawing.Point(72, 88);
@@ -147,7 +146,6 @@
             // 
             // traziTextBox
             // 
-            this.traziTextBox.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.traziTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.traziTextBox.Location = new System.Drawing.Point(216, 85);
             this.traziTextBox.Name = "traziTextBox";
@@ -156,7 +154,7 @@
             // 
             // resetGumb
             // 
-            this.resetGumb.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.resetGumb.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.resetGumb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.resetGumb.Location = new System.Drawing.Point(616, 85);
             this.resetGumb.Name = "resetGumb";
@@ -177,6 +175,7 @@
             this.Controls.Add(this.traziGumb);
             this.Controls.Add(this.dgvLinije);
             this.Controls.Add(this.prikazLinija);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormaPrikazLinijaZaKorisnike";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormaPrikazLinijaZaKorisnike";
