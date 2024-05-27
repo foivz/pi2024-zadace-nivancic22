@@ -82,5 +82,21 @@ namespace BusPlus.Repozitorij
             DB.ExecuteCommand(sql); 
             DB.CloseConnection();
         }
+        public static List<Linija> TraziLiniju(string stanica)
+        {
+            
+            var linije = new List<Linija>();
+            string sql = $"SELECT * FROM AutobusneLinije WHERE PocetnaStanica LIKE '{stanica}' OR ZavrsnaStanica LIKE '{stanica}'";
+            DB.OpenConnection();
+            var reader = DB.GetDataReader(sql);
+            while (reader.Read())
+            {
+                Linija linija = CreateObject(reader);
+                linije.Add(linija);
+            }
+            reader.Close();
+            DB.CloseConnection();
+            return linije;
+        }
     }
 }

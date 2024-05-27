@@ -48,5 +48,21 @@ namespace BusPlus
             formalogin.ShowDialog();
             Close();
         }
+
+        private void traziGumb_Click(object sender, EventArgs e)
+        {
+            PrikaziTrazene();
+        }
+        private void PrikaziTrazene()
+        {
+            string stanica = traziTextBox.Text;
+            List<Linija> linije = LinijaRepozitorij.TraziLiniju(stanica);
+            dgvLinije.DataSource = linije;
+        }
+
+        private void resetGumb_Click(object sender, EventArgs e)
+        {
+            pokaziLinije();
+        }
     }
 }
