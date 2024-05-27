@@ -150,7 +150,7 @@
             this.MinimizeBox = false;
             this.Name = "FormaLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "FormLogin";
             this.Load += new System.EventHandler(this.FormaLogin_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

@@ -121,6 +121,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="PI2324_nivancic22_DBDataSet.xsc">
       <DependentUpon>PI2324_nivancic22_DBDataSet.xsd</DependentUpon>
@@ -148,6 +149,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="DLL\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Varazdin_17.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
