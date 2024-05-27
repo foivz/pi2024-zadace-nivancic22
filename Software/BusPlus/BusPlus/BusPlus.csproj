@@ -149,9 +149,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="DLL\" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Varazdin_17.jpg" />
+    <Folder Include="Resources\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

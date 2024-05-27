@@ -22,16 +22,16 @@ namespace BusPlus
         private void BrisiGumb_Click(object sender, EventArgs e)
         {
             List<Linija> linije = LinijaRepozitorij.GetLinije();
-            int id = int.Parse(idLin.Text);
+            int id = int.Parse(IdLin.Text);
             Linija idLinije = linije.Find(linija => linija.ID_linije == id);
-            if (idLin.Text == "" )
+            if (IdLin.Text == "" )
             {
                 MessageBox.Show("Ispunite polje!", "Pogreška", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 
             }
             else if(idLinije != null)
             {
-                LinijaRepozitorij.IzbrisiLiniju(int.Parse(idLin.Text));
+                LinijaRepozitorij.IzbrisiLiniju(int.Parse(IdLin.Text));
                 Hide();
                 FormaPregledLinija formapregled = new FormaPregledLinija();
                 formapregled.ShowDialog();
@@ -44,7 +44,7 @@ namespace BusPlus
             }
         }
 
-        private void povratakGumb_Click(object sender, EventArgs e)
+        private void PovratakGumb_Click(object sender, EventArgs e)
         {
             Hide();
             FormaPregledLinija formaPregledLinija = new FormaPregledLinija();
@@ -72,7 +72,7 @@ namespace BusPlus
 
         }
 
-        private void idLin_TextChanged(object sender, EventArgs e)
+        private void IdLin_TextChanged(object sender, EventArgs e)
         {
 
         }

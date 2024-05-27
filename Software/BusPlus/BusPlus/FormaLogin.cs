@@ -27,7 +27,7 @@ namespace BusPlus
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void PrijavaGumb_Click(object sender, EventArgs e)
         {
             string username = korimeTextbox.Text;
             string password = lozinkaTextbox.Text;
@@ -50,6 +50,10 @@ namespace BusPlus
                 formaPrikaz.ShowDialog();
                 Close();
                 
+            }
+            else
+            {
+                MessageBox.Show("Uneseni su krivi podaci!", "Pogreška", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 

@@ -59,15 +59,5 @@ namespace BusPlus.Properties {
                 resourceCulture = value;
             }
         }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Varazdin_17 {
-            get {
-                object obj = ResourceManager.GetObject("Varazdin_17", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
     }
 }

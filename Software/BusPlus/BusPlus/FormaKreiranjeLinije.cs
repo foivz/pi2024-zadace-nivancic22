@@ -32,7 +32,7 @@ namespace BusPlus
 
         }
 
-        private void dodaj_gumb_Click(object sender, EventArgs e)
+        private void DodajGumb_Click(object sender, EventArgs e)
         {
             string vrijemeFormat = @"^\d{2}:\d{2}:\d{2}$";
             Regex regex = new Regex(vrijemeFormat);
@@ -126,7 +126,7 @@ namespace BusPlus
 
         }
 
-        private void povratakGumb_Click(object sender, EventArgs e)
+        private void PovratakGumb_Click(object sender, EventArgs e)
         {
             Hide();
             FormaPregledLinija formaPregledLinija = new FormaPregledLinija();

@@ -30,7 +30,7 @@ namespace BusPlus
             dgvLinije.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
         }
 
-        private void Button3_Click(object sender, EventArgs e)
+        private void DodajGumb_Click(object sender, EventArgs e)
         {
             FormaKreiranjeLinije formaNovaLinija = new FormaKreiranjeLinije();
             Hide();
@@ -38,7 +38,7 @@ namespace BusPlus
             Close();
         }
 
-        private void gumbIzmijeni_Click(object sender, EventArgs e)
+        private void GumbIzmijeni_Click(object sender, EventArgs e)
         {
             FormaIzmijenaLinije formaIzmijena = new FormaIzmijenaLinije();
             Hide();
@@ -47,7 +47,7 @@ namespace BusPlus
         }
 
        
-        private void odjavaGumb_Click(object sender, EventArgs e)
+        private void OdjavaGumb_Click(object sender, EventArgs e)
         {
             Hide();
             FormaLogin formalogin = new FormaLogin();
@@ -55,7 +55,7 @@ namespace BusPlus
             Close();
         }
 
-        private void brisiGumb_Click(object sender, EventArgs e)
+        private void BrisiGumb_Click(object sender, EventArgs e)
         {
             Hide();
             FormaBrisanje formabrisanje = new FormaBrisanje();

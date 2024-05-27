@@ -41,7 +41,7 @@ namespace BusPlus
 
         }
 
-        private void odjavaGumb_Click(object sender, EventArgs e)
+        private void OdjavaGumb_Click(object sender, EventArgs e)
         {
             FormaLogin formalogin = new FormaLogin();
             Hide();
@@ -49,7 +49,7 @@ namespace BusPlus
             Close();
         }
 
-        private void traziGumb_Click(object sender, EventArgs e)
+        private void TraziGumb_Click(object sender, EventArgs e)
         {
             PrikaziTrazene();
         }
@@ -60,7 +60,7 @@ namespace BusPlus
             dgvLinije.DataSource = linije;
         }
 
-        private void resetGumb_Click(object sender, EventArgs e)
+        private void ResetGumb_Click(object sender, EventArgs e)
         {
             pokaziLinije();
         }

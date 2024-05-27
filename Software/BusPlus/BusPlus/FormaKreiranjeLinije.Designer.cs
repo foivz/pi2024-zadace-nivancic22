@@ -41,10 +41,10 @@
             this.pocVr = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.zavrVr = new System.Windows.Forms.TextBox();
-            this.dodaj_gumb = new System.Windows.Forms.Button();
+            this.DodajGumb = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.idLin = new System.Windows.Forms.TextBox();
-            this.povratakGumb = new System.Windows.Forms.Button();
+            this.PovratakGumb = new System.Windows.Forms.Button();
             this.prikazLinija.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -194,17 +194,17 @@
             this.zavrVr.TabIndex = 14;
             this.zavrVr.TextChanged += new System.EventHandler(this.zavrVr_TextChanged);
             // 
-            // dodaj_gumb
+            // DodajGumb
             // 
-            this.dodaj_gumb.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.DodajGumb.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dodaj_gumb.Location = new System.Drawing.Point(198, 296);
-            this.dodaj_gumb.Name = "dodaj_gumb";
-            this.dodaj_gumb.Size = new System.Drawing.Size(125, 33);
-            this.dodaj_gumb.TabIndex = 15;
-            this.dodaj_gumb.Text = "Dodaj";
-            this.dodaj_gumb.UseVisualStyleBackColor = true;
-            this.dodaj_gumb.Click += new System.EventHandler(this.dodaj_gumb_Click);
+            this.DodajGumb.Location = new System.Drawing.Point(198, 296);
+            this.DodajGumb.Name = "DodajGumb";
+            this.DodajGumb.Size = new System.Drawing.Size(125, 33);
+            this.DodajGumb.TabIndex = 15;
+            this.DodajGumb.Text = "Dodaj";
+            this.DodajGumb.UseVisualStyleBackColor = true;
+            this.DodajGumb.Click += new System.EventHandler(this.DodajGumb_Click);
             // 
             // label4
             // 
@@ -230,28 +230,28 @@
             this.idLin.TabIndex = 17;
             this.idLin.TextChanged += new System.EventHandler(this.idLin_TextChanged);
             // 
-            // povratakGumb
+            // PovratakGumb
             // 
-            this.povratakGumb.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.PovratakGumb.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.povratakGumb.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.povratakGumb.Location = new System.Drawing.Point(424, 62);
-            this.povratakGumb.Name = "povratakGumb";
-            this.povratakGumb.Size = new System.Drawing.Size(83, 22);
-            this.povratakGumb.TabIndex = 22;
-            this.povratakGumb.Text = "Povratak";
-            this.povratakGumb.UseVisualStyleBackColor = true;
-            this.povratakGumb.Click += new System.EventHandler(this.povratakGumb_Click);
+            this.PovratakGumb.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.PovratakGumb.Location = new System.Drawing.Point(424, 62);
+            this.PovratakGumb.Name = "PovratakGumb";
+            this.PovratakGumb.Size = new System.Drawing.Size(83, 22);
+            this.PovratakGumb.TabIndex = 22;
+            this.PovratakGumb.Text = "Povratak";
+            this.PovratakGumb.UseVisualStyleBackColor = true;
+            this.PovratakGumb.Click += new System.EventHandler(this.PovratakGumb_Click);
             // 
             // FormaKreiranjeLinije
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(519, 346);
-            this.Controls.Add(this.povratakGumb);
+            this.Controls.Add(this.PovratakGumb);
             this.Controls.Add(this.idLin);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.dodaj_gumb);
+            this.Controls.Add(this.DodajGumb);
             this.Controls.Add(this.zavrVr);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.pocVr);
@@ -291,9 +291,9 @@
         private System.Windows.Forms.TextBox pocVr;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox zavrVr;
-        private System.Windows.Forms.Button dodaj_gumb;
+        private System.Windows.Forms.Button DodajGumb;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox idLin;
-        private System.Windows.Forms.Button povratakGumb;
+        private System.Windows.Forms.Button PovratakGumb;
     }
 }

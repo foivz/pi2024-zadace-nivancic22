@@ -33,7 +33,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.korime = new System.Windows.Forms.Label();
             this.lozinka = new System.Windows.Forms.Label();
-            this.prijavaGumb = new System.Windows.Forms.Button();
+            this.PrijavaGumb = new System.Windows.Forms.Button();
             this.korimeTextbox = new System.Windows.Forms.TextBox();
             this.lozinkaTextbox = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
@@ -93,20 +93,20 @@
             this.lozinka.Text = "Lozinka: ";
             this.lozinka.Click += new System.EventHandler(this.label3_Click);
             // 
-            // prijavaGumb
+            // PrijavaGumb
             // 
-            this.prijavaGumb.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.PrijavaGumb.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.prijavaGumb.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.prijavaGumb.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.prijavaGumb.Location = new System.Drawing.Point(289, 193);
-            this.prijavaGumb.Name = "prijavaGumb";
-            this.prijavaGumb.Size = new System.Drawing.Size(104, 29);
-            this.prijavaGumb.TabIndex = 3;
-            this.prijavaGumb.Text = "Prijavi se";
-            this.prijavaGumb.UseVisualStyleBackColor = true;
-            this.prijavaGumb.Click += new System.EventHandler(this.button1_Click);
+            this.PrijavaGumb.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.PrijavaGumb.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.PrijavaGumb.Location = new System.Drawing.Point(289, 193);
+            this.PrijavaGumb.Name = "PrijavaGumb";
+            this.PrijavaGumb.Size = new System.Drawing.Size(104, 29);
+            this.PrijavaGumb.TabIndex = 3;
+            this.PrijavaGumb.Text = "Prijavi se";
+            this.PrijavaGumb.UseVisualStyleBackColor = true;
+            this.PrijavaGumb.Click += new System.EventHandler(this.PrijavaGumb_Click);
             // 
             // korimeTextbox
             // 
@@ -141,7 +141,7 @@
             this.ClientSize = new System.Drawing.Size(508, 295);
             this.Controls.Add(this.lozinkaTextbox);
             this.Controls.Add(this.korimeTextbox);
-            this.Controls.Add(this.prijavaGumb);
+            this.Controls.Add(this.PrijavaGumb);
             this.Controls.Add(this.lozinka);
             this.Controls.Add(this.korime);
             this.Controls.Add(this.panel1);
@@ -165,7 +165,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label korime;
         private System.Windows.Forms.Label lozinka;
-        private System.Windows.Forms.Button prijavaGumb;
+        private System.Windows.Forms.Button PrijavaGumb;
         private System.Windows.Forms.TextBox korimeTextbox;
         private System.Windows.Forms.TextBox lozinkaTextbox;
     }
