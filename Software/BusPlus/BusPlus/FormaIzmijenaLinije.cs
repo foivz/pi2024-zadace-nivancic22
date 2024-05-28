@@ -20,14 +20,14 @@ namespace BusPlus
             InitializeComponent();
         }
 
-        private void IzmijeniGumb_Click(object sender, EventArgs e)
+        private void btnIzmijeni_Click(object sender, EventArgs e)
         {
                 string vrijemeFormat = @"^\d{2}:\d{2}:\d{2}$";
                 Regex regex = new Regex(vrijemeFormat);
                 List<Linija> linije = LinijaRepozitorij.GetLinije();
-                int id = int.Parse(idLin.Text);
+                int id = int.Parse(IdLin.Text);
                 Linija idLinije = linije.Find(linija => linija.ID_linije == id);
-                if (idLin.Text == "" || pocStan.Text == "" || zavrStan.Text == "" || brBus.Text == "" || pocVr.Text == "" || zavrVr.Text == "")
+                if (IdLin.Text == "" || PocStan.Text == "" || ZavrStan.Text == "" || BrBus.Text == "" || PocVr.Text == "" || ZavrVr.Text == "")
                 {
                     MessageBox.Show("Popunite sva polja", "Pogreška", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 
@@ -35,9 +35,9 @@ namespace BusPlus
 
                 else if (idLinije != null)
                 {
-                    if (regex.IsMatch(pocVr.Text) && regex.IsMatch(zavrVr.Text))
+                    if (regex.IsMatch(PocVr.Text) && regex.IsMatch(ZavrVr.Text))
                     {
-                        LinijaRepozitorij.AzurirajLiniju(int.Parse(idLin.Text), pocStan.Text, zavrStan.Text, int.Parse(brBus.Text), pocVr.Text, zavrVr.Text);
+                        LinijaRepozitorij.AzurirajLiniju(int.Parse(IdLin.Text), PocStan.Text, ZavrStan.Text, int.Parse(BrBus.Text), PocVr.Text, ZavrVr.Text);
                         Hide();
                         FormaPregledLinija formaPregled = new FormaPregledLinija();
                         formaPregled.ShowDialog();
@@ -56,12 +56,14 @@ namespace BusPlus
 
         }
 
-        private void PovratakGumb_Click(object sender, EventArgs e)
+        private void btnPovratak_Click(object sender, EventArgs e)
         {
             Hide();
             FormaPregledLinija formaPregledLinija = new FormaPregledLinija();
             formaPregledLinija.ShowDialog();
             Close();
         }
+
+        
     }
 }

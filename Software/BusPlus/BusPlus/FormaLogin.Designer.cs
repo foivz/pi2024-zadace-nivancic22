@@ -33,9 +33,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.korime = new System.Windows.Forms.Label();
             this.lozinka = new System.Windows.Forms.Label();
-            this.PrijavaGumb = new System.Windows.Forms.Button();
-            this.korimeTextbox = new System.Windows.Forms.TextBox();
-            this.lozinkaTextbox = new System.Windows.Forms.TextBox();
+            this.btnPrijava = new System.Windows.Forms.Button();
+            this.KorimeTextbox = new System.Windows.Forms.TextBox();
+            this.LozinkaTextbox = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -77,7 +77,6 @@
             this.korime.Size = new System.Drawing.Size(118, 20);
             this.korime.TabIndex = 1;
             this.korime.Text = "Korisničko ime: ";
-            this.korime.Click += new System.EventHandler(this.label2_Click);
             // 
             // lozinka
             // 
@@ -91,47 +90,44 @@
             this.lozinka.Size = new System.Drawing.Size(72, 20);
             this.lozinka.TabIndex = 2;
             this.lozinka.Text = "Lozinka: ";
-            this.lozinka.Click += new System.EventHandler(this.label3_Click);
             // 
-            // PrijavaGumb
+            // btnPrijava
             // 
-            this.PrijavaGumb.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.btnPrijava.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.PrijavaGumb.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.PrijavaGumb.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.PrijavaGumb.Location = new System.Drawing.Point(289, 193);
-            this.PrijavaGumb.Name = "PrijavaGumb";
-            this.PrijavaGumb.Size = new System.Drawing.Size(104, 29);
-            this.PrijavaGumb.TabIndex = 3;
-            this.PrijavaGumb.Text = "Prijavi se";
-            this.PrijavaGumb.UseVisualStyleBackColor = true;
-            this.PrijavaGumb.Click += new System.EventHandler(this.PrijavaGumb_Click);
+            this.btnPrijava.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.btnPrijava.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnPrijava.Location = new System.Drawing.Point(289, 193);
+            this.btnPrijava.Name = "btnPrijava";
+            this.btnPrijava.Size = new System.Drawing.Size(104, 29);
+            this.btnPrijava.TabIndex = 3;
+            this.btnPrijava.Text = "Prijavi se";
+            this.btnPrijava.UseVisualStyleBackColor = true;
+            this.btnPrijava.Click += new System.EventHandler(this.btnPrijava_Click);
             // 
-            // korimeTextbox
+            // KorimeTextbox
             // 
-            this.korimeTextbox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.KorimeTextbox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.korimeTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.korimeTextbox.Location = new System.Drawing.Point(245, 112);
-            this.korimeTextbox.Name = "korimeTextbox";
-            this.korimeTextbox.Size = new System.Drawing.Size(148, 26);
-            this.korimeTextbox.TabIndex = 4;
-            this.korimeTextbox.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.KorimeTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.KorimeTextbox.Location = new System.Drawing.Point(245, 112);
+            this.KorimeTextbox.Name = "KorimeTextbox";
+            this.KorimeTextbox.Size = new System.Drawing.Size(148, 26);
+            this.KorimeTextbox.TabIndex = 4;
             // 
-            // lozinkaTextbox
+            // LozinkaTextbox
             // 
-            this.lozinkaTextbox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.LozinkaTextbox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.lozinkaTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lozinkaTextbox.Location = new System.Drawing.Point(245, 152);
-            this.lozinkaTextbox.Name = "lozinkaTextbox";
-            this.lozinkaTextbox.Size = new System.Drawing.Size(148, 26);
-            this.lozinkaTextbox.TabIndex = 5;
-            this.lozinkaTextbox.UseSystemPasswordChar = true;
-            this.lozinkaTextbox.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.LozinkaTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.LozinkaTextbox.Location = new System.Drawing.Point(245, 152);
+            this.LozinkaTextbox.Name = "LozinkaTextbox";
+            this.LozinkaTextbox.Size = new System.Drawing.Size(148, 26);
+            this.LozinkaTextbox.TabIndex = 5;
+            this.LozinkaTextbox.UseSystemPasswordChar = true;
             // 
             // FormaLogin
             // 
@@ -139,9 +135,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(508, 295);
-            this.Controls.Add(this.lozinkaTextbox);
-            this.Controls.Add(this.korimeTextbox);
-            this.Controls.Add(this.PrijavaGumb);
+            this.Controls.Add(this.LozinkaTextbox);
+            this.Controls.Add(this.KorimeTextbox);
+            this.Controls.Add(this.btnPrijava);
             this.Controls.Add(this.lozinka);
             this.Controls.Add(this.korime);
             this.Controls.Add(this.panel1);
@@ -165,9 +161,9 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label korime;
         private System.Windows.Forms.Label lozinka;
-        private System.Windows.Forms.Button PrijavaGumb;
-        private System.Windows.Forms.TextBox korimeTextbox;
-        private System.Windows.Forms.TextBox lozinkaTextbox;
+        private System.Windows.Forms.Button btnPrijava;
+        private System.Windows.Forms.TextBox KorimeTextbox;
+        private System.Windows.Forms.TextBox LozinkaTextbox;
     }
 }
 

@@ -21,16 +21,16 @@ namespace BusPlus
 
         private void FormaPregledLinija_Load(object sender, EventArgs e)
         {
-            pokaziLinije();
+            PokaziLinije();
         }
-        private void pokaziLinije()
+        private void PokaziLinije()
         {
             List<Linija> linije = LinijaRepozitorij.GetLinije();
             dgvLinije.DataSource = linije;
             dgvLinije.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
         }
 
-        private void DodajGumb_Click(object sender, EventArgs e)
+        private void btnDodaj_Click(object sender, EventArgs e)
         {
             FormaKreiranjeLinije formaNovaLinija = new FormaKreiranjeLinije();
             Hide();
@@ -38,7 +38,7 @@ namespace BusPlus
             Close();
         }
 
-        private void GumbIzmijeni_Click(object sender, EventArgs e)
+        private void btnIzmijeni_Click(object sender, EventArgs e)
         {
             FormaIzmijenaLinije formaIzmijena = new FormaIzmijenaLinije();
             Hide();
@@ -47,7 +47,7 @@ namespace BusPlus
         }
 
        
-        private void OdjavaGumb_Click(object sender, EventArgs e)
+        private void btnOdjava_Click(object sender, EventArgs e)
         {
             Hide();
             FormaLogin formalogin = new FormaLogin();
@@ -55,7 +55,7 @@ namespace BusPlus
             Close();
         }
 
-        private void BrisiGumb_Click(object sender, EventArgs e)
+        private void btnBrisi_Click(object sender, EventArgs e)
         {
             Hide();
             FormaBrisanje formabrisanje = new FormaBrisanje();
@@ -63,9 +63,6 @@ namespace BusPlus
             Close();
         }
 
-        private void dgvLinije_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
+        
     }
 }

@@ -31,20 +31,20 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormaKreiranjeLinije));
             this.prikazLinija = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.pocStan = new System.Windows.Forms.TextBox();
+            this.PocStan = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.zavrStan = new System.Windows.Forms.TextBox();
+            this.ZavrStan = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.brBus = new System.Windows.Forms.TextBox();
+            this.BrBus = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.pocVr = new System.Windows.Forms.TextBox();
+            this.PocVr = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.zavrVr = new System.Windows.Forms.TextBox();
-            this.DodajGumb = new System.Windows.Forms.Button();
+            this.ZavrVr = new System.Windows.Forms.TextBox();
+            this.btnDodaj = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
-            this.idLin = new System.Windows.Forms.TextBox();
-            this.PovratakGumb = new System.Windows.Forms.Button();
+            this.IdLin = new System.Windows.Forms.TextBox();
+            this.btnPovratak = new System.Windows.Forms.Button();
             this.prikazLinija.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -58,7 +58,6 @@
             this.prikazLinija.Name = "prikazLinija";
             this.prikazLinija.Size = new System.Drawing.Size(813, 56);
             this.prikazLinija.TabIndex = 2;
-            this.prikazLinija.Paint += new System.Windows.Forms.PaintEventHandler(this.prikazLinija_Paint);
             // 
             // label1
             // 
@@ -72,18 +71,16 @@
             this.label1.Size = new System.Drawing.Size(114, 31);
             this.label1.TabIndex = 0;
             this.label1.Text = "BusPlus";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // pocStan
+            // PocStan
             // 
-            this.pocStan.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.PocStan.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pocStan.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.pocStan.Location = new System.Drawing.Point(253, 119);
-            this.pocStan.Name = "pocStan";
-            this.pocStan.Size = new System.Drawing.Size(220, 22);
-            this.pocStan.TabIndex = 3;
-            this.pocStan.TextChanged += new System.EventHandler(this.pocStan_TextChanged);
+            this.PocStan.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.PocStan.Location = new System.Drawing.Point(253, 119);
+            this.PocStan.Name = "PocStan";
+            this.PocStan.Size = new System.Drawing.Size(220, 22);
+            this.PocStan.TabIndex = 3;
             // 
             // label2
             // 
@@ -96,7 +93,6 @@
             this.label2.Size = new System.Drawing.Size(109, 16);
             this.label2.TabIndex = 4;
             this.label2.Text = "Početna stanica: ";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
@@ -109,18 +105,16 @@
             this.label3.Size = new System.Drawing.Size(105, 16);
             this.label3.TabIndex = 5;
             this.label3.Text = "Završna stanica:";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
-            // zavrStan
+            // ZavrStan
             // 
-            this.zavrStan.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.ZavrStan.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.zavrStan.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.zavrStan.Location = new System.Drawing.Point(253, 148);
-            this.zavrStan.Name = "zavrStan";
-            this.zavrStan.Size = new System.Drawing.Size(220, 22);
-            this.zavrStan.TabIndex = 6;
-            this.zavrStan.TextChanged += new System.EventHandler(this.zavrStan_TextChanged);
+            this.ZavrStan.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.ZavrStan.Location = new System.Drawing.Point(253, 148);
+            this.ZavrStan.Name = "ZavrStan";
+            this.ZavrStan.Size = new System.Drawing.Size(220, 22);
+            this.ZavrStan.TabIndex = 6;
             // 
             // label5
             // 
@@ -133,18 +127,16 @@
             this.label5.Size = new System.Drawing.Size(82, 16);
             this.label5.TabIndex = 9;
             this.label5.Text = "ID autobusa:";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
-            // brBus
+            // BrBus
             // 
-            this.brBus.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.BrBus.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.brBus.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.brBus.Location = new System.Drawing.Point(253, 179);
-            this.brBus.Name = "brBus";
-            this.brBus.Size = new System.Drawing.Size(38, 22);
-            this.brBus.TabIndex = 10;
-            this.brBus.TextChanged += new System.EventHandler(this.brBus_TextChanged);
+            this.BrBus.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.BrBus.Location = new System.Drawing.Point(253, 179);
+            this.BrBus.Name = "BrBus";
+            this.BrBus.Size = new System.Drawing.Size(38, 22);
+            this.BrBus.TabIndex = 10;
             // 
             // label6
             // 
@@ -157,18 +149,16 @@
             this.label6.Size = new System.Drawing.Size(107, 16);
             this.label6.TabIndex = 11;
             this.label6.Text = "Početno vrijeme:";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
-            // pocVr
+            // PocVr
             // 
-            this.pocVr.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.PocVr.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pocVr.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.pocVr.Location = new System.Drawing.Point(253, 213);
-            this.pocVr.Name = "pocVr";
-            this.pocVr.Size = new System.Drawing.Size(124, 22);
-            this.pocVr.TabIndex = 12;
-            this.pocVr.TextChanged += new System.EventHandler(this.pocVr_TextChanged);
+            this.PocVr.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.PocVr.Location = new System.Drawing.Point(253, 213);
+            this.PocVr.Name = "PocVr";
+            this.PocVr.Size = new System.Drawing.Size(124, 22);
+            this.PocVr.TabIndex = 12;
             // 
             // label7
             // 
@@ -181,30 +171,29 @@
             this.label7.Size = new System.Drawing.Size(106, 16);
             this.label7.TabIndex = 13;
             this.label7.Text = "Završno vrijeme:";
-            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
-            // zavrVr
+            // ZavrVr
             // 
-            this.zavrVr.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.ZavrVr.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.zavrVr.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.zavrVr.Location = new System.Drawing.Point(253, 249);
-            this.zavrVr.Name = "zavrVr";
-            this.zavrVr.Size = new System.Drawing.Size(124, 22);
-            this.zavrVr.TabIndex = 14;
-            this.zavrVr.TextChanged += new System.EventHandler(this.zavrVr_TextChanged);
+            this.ZavrVr.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.ZavrVr.Location = new System.Drawing.Point(253, 249);
+            this.ZavrVr.Name = "ZavrVr";
+            this.ZavrVr.Size = new System.Drawing.Size(124, 22);
+            this.ZavrVr.TabIndex = 14;
+            this.ZavrVr.TextChanged += new System.EventHandler(this.ZavrVr_TextChanged);
             // 
-            // DodajGumb
+            // btnDodaj
             // 
-            this.DodajGumb.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.btnDodaj.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.DodajGumb.Location = new System.Drawing.Point(198, 296);
-            this.DodajGumb.Name = "DodajGumb";
-            this.DodajGumb.Size = new System.Drawing.Size(125, 33);
-            this.DodajGumb.TabIndex = 15;
-            this.DodajGumb.Text = "Dodaj";
-            this.DodajGumb.UseVisualStyleBackColor = true;
-            this.DodajGumb.Click += new System.EventHandler(this.DodajGumb_Click);
+            this.btnDodaj.Location = new System.Drawing.Point(198, 296);
+            this.btnDodaj.Name = "btnDodaj";
+            this.btnDodaj.Size = new System.Drawing.Size(125, 33);
+            this.btnDodaj.TabIndex = 15;
+            this.btnDodaj.Text = "Dodaj";
+            this.btnDodaj.UseVisualStyleBackColor = true;
+            this.btnDodaj.Click += new System.EventHandler(this.btnDodaj_Click);
             // 
             // label4
             // 
@@ -217,51 +206,49 @@
             this.label4.Size = new System.Drawing.Size(57, 16);
             this.label4.TabIndex = 16;
             this.label4.Text = "ID Linije:";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
-            // idLin
+            // IdLin
             // 
-            this.idLin.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.IdLin.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.idLin.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.idLin.Location = new System.Drawing.Point(253, 93);
-            this.idLin.Name = "idLin";
-            this.idLin.Size = new System.Drawing.Size(38, 22);
-            this.idLin.TabIndex = 17;
-            this.idLin.TextChanged += new System.EventHandler(this.idLin_TextChanged);
+            this.IdLin.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.IdLin.Location = new System.Drawing.Point(253, 93);
+            this.IdLin.Name = "IdLin";
+            this.IdLin.Size = new System.Drawing.Size(38, 22);
+            this.IdLin.TabIndex = 17;
             // 
-            // PovratakGumb
+            // btnPovratak
             // 
-            this.PovratakGumb.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.btnPovratak.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.PovratakGumb.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.PovratakGumb.Location = new System.Drawing.Point(424, 62);
-            this.PovratakGumb.Name = "PovratakGumb";
-            this.PovratakGumb.Size = new System.Drawing.Size(83, 22);
-            this.PovratakGumb.TabIndex = 22;
-            this.PovratakGumb.Text = "Povratak";
-            this.PovratakGumb.UseVisualStyleBackColor = true;
-            this.PovratakGumb.Click += new System.EventHandler(this.PovratakGumb_Click);
+            this.btnPovratak.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnPovratak.Location = new System.Drawing.Point(424, 62);
+            this.btnPovratak.Name = "btnPovratak";
+            this.btnPovratak.Size = new System.Drawing.Size(83, 22);
+            this.btnPovratak.TabIndex = 22;
+            this.btnPovratak.Text = "Povratak";
+            this.btnPovratak.UseVisualStyleBackColor = true;
+            this.btnPovratak.Click += new System.EventHandler(this.btnPovratak_Click);
             // 
             // FormaKreiranjeLinije
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(519, 346);
-            this.Controls.Add(this.PovratakGumb);
-            this.Controls.Add(this.idLin);
+            this.Controls.Add(this.btnPovratak);
+            this.Controls.Add(this.IdLin);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.DodajGumb);
-            this.Controls.Add(this.zavrVr);
+            this.Controls.Add(this.btnDodaj);
+            this.Controls.Add(this.ZavrVr);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.pocVr);
+            this.Controls.Add(this.PocVr);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.brBus);
+            this.Controls.Add(this.BrBus);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.zavrStan);
+            this.Controls.Add(this.ZavrStan);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.pocStan);
+            this.Controls.Add(this.PocStan);
             this.Controls.Add(this.prikazLinija);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -281,19 +268,19 @@
 
         private System.Windows.Forms.Panel prikazLinija;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox pocStan;
+        private System.Windows.Forms.TextBox PocStan;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox zavrStan;
+        private System.Windows.Forms.TextBox ZavrStan;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox brBus;
+        private System.Windows.Forms.TextBox BrBus;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox pocVr;
+        private System.Windows.Forms.TextBox PocVr;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox zavrVr;
-        private System.Windows.Forms.Button DodajGumb;
+        private System.Windows.Forms.TextBox ZavrVr;
+        private System.Windows.Forms.Button btnDodaj;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox idLin;
-        private System.Windows.Forms.Button PovratakGumb;
+        private System.Windows.Forms.TextBox IdLin;
+        private System.Windows.Forms.Button btnPovratak;
     }
 }

@@ -19,7 +19,7 @@ namespace BusPlus
             InitializeComponent();
         }
 
-        private void BrisiGumb_Click(object sender, EventArgs e)
+        private void btnBrisi_Click(object sender, EventArgs e)
         {
             List<Linija> linije = LinijaRepozitorij.GetLinije();
             int id = int.Parse(IdLin.Text);
@@ -44,7 +44,7 @@ namespace BusPlus
             }
         }
 
-        private void PovratakGumb_Click(object sender, EventArgs e)
+        private void btnPovratak_Click(object sender, EventArgs e)
         {
             Hide();
             FormaPregledLinija formaPregledLinija = new FormaPregledLinija();
@@ -52,29 +52,6 @@ namespace BusPlus
             Close();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void prikazLinija_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void IdLin_TextChanged(object sender, EventArgs e)
-        {
-
-        }
+        
     }
 }

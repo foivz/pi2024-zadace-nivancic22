@@ -23,25 +23,19 @@ namespace BusPlus
         {
             // TODO: This line of code loads data into the 'pI2324_nivancic22_DBDataSet.AutobusneLinije' table. You can move, or remove it, as needed.
             //this.autobusneLinijeTableAdapter.Fill(this.pI2324_nivancic22_DBDataSet.AutobusneLinije);
-            pokaziLinije();
+            PokaziLinije();
         }
 
-        private void prikazLinija_Paint(object sender, PaintEventArgs e)
-        {
+        
 
-        }
-
-        private void pokaziLinije()
+        private void PokaziLinije()
         {
             List<Linija> linije = LinijaRepozitorij.GetLinije();
             dgvLinije.DataSource = linije;
         }
-        private void dgvLinije_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
+        
 
-        }
-
-        private void OdjavaGumb_Click(object sender, EventArgs e)
+        private void btnOdjava_Click(object sender, EventArgs e)
         {
             FormaLogin formalogin = new FormaLogin();
             Hide();
@@ -49,7 +43,7 @@ namespace BusPlus
             Close();
         }
 
-        private void TraziGumb_Click(object sender, EventArgs e)
+        private void btnTrazi_Click(object sender, EventArgs e)
         {
             PrikaziTrazene();
         }
@@ -60,9 +54,9 @@ namespace BusPlus
             dgvLinije.DataSource = linije;
         }
 
-        private void ResetGumb_Click(object sender, EventArgs e)
+        private void btnReset_Click(object sender, EventArgs e)
         {
-            pokaziLinije();
+            PokaziLinije();
         }
     }
 }

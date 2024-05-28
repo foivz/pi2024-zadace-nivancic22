@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\nikoi\\Desktop\\4. semestar\\PI\\BusPlus\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nikoi\\Desktop\\4. semestar\\PI\\BusPlus\\Software\\BusPlus\\BusPlus\\Klase\\Linija.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Software\\BusPlus\\BusPlus\\Klase\\Linija.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nikoi\\Desktop\\4. semestar\\PI\\BusPlus\\Software\\BusPlus\\BusPlus\\Repozitorij\\LinijaRepozitorij.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Software\\BusPlus\\BusPlus\\Repozitorij\\LinijaRepozitorij.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nikoi\\Desktop\\4. semestar\\PI\\BusPlus\\Software\\BusPlus\\BusPlus\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Software\\BusPlus\\BusPlus\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nikoi\\Desktop\\4. semestar\\PI\\BusPlus\\Software\\BusPlus\\BusPlus\\Repozitorij\\LinijaRepozitorij.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Software\\BusPlus\\BusPlus\\Repozitorij\\LinijaRepozitorij.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nikoi\\Desktop\\4. semestar\\PI\\BusPlus\\Software\\BusPlus\\BusPlus\\Klase\\Linija.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Software\\BusPlus\\BusPlus\\Klase\\Linija.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nikoi\\Desktop\\4. semestar\\PI\\BusPlus\\Software\\BusPlus\\BusPlus\\Klase\\Zaposlenik.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -49,7 +49,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Bookmark",
@@ -91,25 +91,26 @@
               "RelativeDocumentMoniker": "Software\\BusPlus\\BusPlus\\Program.cs",
               "ToolTip": "C:\\Users\\nikoi\\Desktop\\4. semestar\\PI\\BusPlus\\Software\\BusPlus\\BusPlus\\Program.cs",
               "RelativeToolTip": "Software\\BusPlus\\BusPlus\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAABeAAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-25T14:53:02.086Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "LinijaRepozitorij.cs",
               "DocumentMoniker": "C:\\Users\\nikoi\\Desktop\\4. semestar\\PI\\BusPlus\\Software\\BusPlus\\BusPlus\\Repozitorij\\LinijaRepozitorij.cs",
               "RelativeDocumentMoniker": "Software\\BusPlus\\BusPlus\\Repozitorij\\LinijaRepozitorij.cs",
               "ToolTip": "C:\\Users\\nikoi\\Desktop\\4. semestar\\PI\\BusPlus\\Software\\BusPlus\\BusPlus\\Repozitorij\\LinijaRepozitorij.cs",
               "RelativeToolTip": "Software\\BusPlus\\BusPlus\\Repozitorij\\LinijaRepozitorij.cs",
-              "ViewState": "AQIAACQAAAAAAAAAAAAAAB8AAAAgAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAC0AAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-25T12:52:43.705Z"
+              "WhenOpened": "2024-05-25T12:52:43.705Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Linija.cs",
               "DocumentMoniker": "C:\\Users\\nikoi\\Desktop\\4. semestar\\PI\\BusPlus\\Software\\BusPlus\\BusPlus\\Klase\\Linija.cs",
               "RelativeDocumentMoniker": "Software\\BusPlus\\BusPlus\\Klase\\Linija.cs",
@@ -117,8 +118,7 @@
               "RelativeToolTip": "Software\\BusPlus\\BusPlus\\Klase\\Linija.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAACAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-25T12:52:39.396Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-25T12:52:39.396Z"
             },
             {
               "$type": "Document",

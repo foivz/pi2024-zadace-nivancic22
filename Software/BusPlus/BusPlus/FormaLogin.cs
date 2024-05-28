@@ -17,20 +17,10 @@ namespace BusPlus
             InitializeComponent();
         }
 
-        private void textBox2_TextChanged(object sender, EventArgs e)
+        private void btnPrijava_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void PrijavaGumb_Click(object sender, EventArgs e)
-        {
-            string username = korimeTextbox.Text;
-            string password = lozinkaTextbox.Text;
+            string username = KorimeTextbox.Text;
+            string password = LozinkaTextbox.Text;
             if (username == "" || password == "")
             {
                 MessageBox.Show("Popunite sva polja", "Pogreška", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -57,15 +47,7 @@ namespace BusPlus
             }
         }
 
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
+        
 
         private void FormaLogin_Load(object sender, EventArgs e)
         {

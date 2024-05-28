@@ -30,12 +30,12 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormaPregledLinija));
             this.prikazLinija = new System.Windows.Forms.Panel();
-            this.OdjavaGumb = new System.Windows.Forms.Button();
+            this.btnOdjava = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.dgvLinije = new System.Windows.Forms.DataGridView();
-            this.DodajGumb = new System.Windows.Forms.Button();
-            this.BrisiGumb = new System.Windows.Forms.Button();
-            this.GumbIzmijeni = new System.Windows.Forms.Button();
+            this.btnDodaj = new System.Windows.Forms.Button();
+            this.btnBrisi = new System.Windows.Forms.Button();
+            this.btnIzmijeni = new System.Windows.Forms.Button();
             this.prikazLinija.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLinije)).BeginInit();
             this.SuspendLayout();
@@ -45,27 +45,27 @@
             this.prikazLinija.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.prikazLinija.BackColor = System.Drawing.Color.Maroon;
-            this.prikazLinija.Controls.Add(this.OdjavaGumb);
+            this.prikazLinija.Controls.Add(this.btnOdjava);
             this.prikazLinija.Controls.Add(this.label1);
             this.prikazLinija.Location = new System.Drawing.Point(0, 0);
             this.prikazLinija.Name = "prikazLinija";
             this.prikazLinija.Size = new System.Drawing.Size(1201, 56);
             this.prikazLinija.TabIndex = 2;
             // 
-            // OdjavaGumb
+            // btnOdjava
             // 
-            this.OdjavaGumb.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.OdjavaGumb.BackColor = System.Drawing.Color.Transparent;
-            this.OdjavaGumb.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.OdjavaGumb.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.OdjavaGumb.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.OdjavaGumb.Location = new System.Drawing.Point(642, 12);
-            this.OdjavaGumb.Name = "OdjavaGumb";
-            this.OdjavaGumb.Size = new System.Drawing.Size(96, 30);
-            this.OdjavaGumb.TabIndex = 2;
-            this.OdjavaGumb.Text = "Odjava";
-            this.OdjavaGumb.UseVisualStyleBackColor = false;
-            this.OdjavaGumb.Click += new System.EventHandler(this.OdjavaGumb_Click);
+            this.btnOdjava.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.btnOdjava.BackColor = System.Drawing.Color.Transparent;
+            this.btnOdjava.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnOdjava.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnOdjava.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.btnOdjava.Location = new System.Drawing.Point(642, 12);
+            this.btnOdjava.Name = "btnOdjava";
+            this.btnOdjava.Size = new System.Drawing.Size(96, 30);
+            this.btnOdjava.TabIndex = 2;
+            this.btnOdjava.Text = "Odjava";
+            this.btnOdjava.UseVisualStyleBackColor = false;
+            this.btnOdjava.Click += new System.EventHandler(this.btnOdjava_Click);
             // 
             // label1
             // 
@@ -97,49 +97,48 @@
             this.dgvLinije.ReadOnly = true;
             this.dgvLinije.Size = new System.Drawing.Size(672, 319);
             this.dgvLinije.TabIndex = 3;
-            this.dgvLinije.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvLinije_CellContentClick);
             // 
-            // DodajGumb
+            // btnDodaj
             // 
-            this.DodajGumb.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.DodajGumb.Location = new System.Drawing.Point(589, 426);
-            this.DodajGumb.Name = "DodajGumb";
-            this.DodajGumb.Size = new System.Drawing.Size(120, 31);
-            this.DodajGumb.TabIndex = 8;
-            this.DodajGumb.Text = "Dodaj";
-            this.DodajGumb.UseVisualStyleBackColor = true;
-            this.DodajGumb.Click += new System.EventHandler(this.DodajGumb_Click);
+            this.btnDodaj.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnDodaj.Location = new System.Drawing.Point(589, 426);
+            this.btnDodaj.Name = "btnDodaj";
+            this.btnDodaj.Size = new System.Drawing.Size(120, 31);
+            this.btnDodaj.TabIndex = 8;
+            this.btnDodaj.Text = "Dodaj";
+            this.btnDodaj.UseVisualStyleBackColor = true;
+            this.btnDodaj.Click += new System.EventHandler(this.btnDodaj_Click);
             // 
-            // BrisiGumb
+            // btnBrisi
             // 
-            this.BrisiGumb.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.BrisiGumb.Location = new System.Drawing.Point(463, 426);
-            this.BrisiGumb.Name = "BrisiGumb";
-            this.BrisiGumb.Size = new System.Drawing.Size(120, 31);
-            this.BrisiGumb.TabIndex = 7;
-            this.BrisiGumb.Text = "Izbriši";
-            this.BrisiGumb.UseVisualStyleBackColor = true;
-            this.BrisiGumb.Click += new System.EventHandler(this.BrisiGumb_Click);
+            this.btnBrisi.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnBrisi.Location = new System.Drawing.Point(463, 426);
+            this.btnBrisi.Name = "btnBrisi";
+            this.btnBrisi.Size = new System.Drawing.Size(120, 31);
+            this.btnBrisi.TabIndex = 7;
+            this.btnBrisi.Text = "Izbriši";
+            this.btnBrisi.UseVisualStyleBackColor = true;
+            this.btnBrisi.Click += new System.EventHandler(this.btnBrisi_Click);
             // 
-            // GumbIzmijeni
+            // btnIzmijeni
             // 
-            this.GumbIzmijeni.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.GumbIzmijeni.Location = new System.Drawing.Point(337, 426);
-            this.GumbIzmijeni.Name = "GumbIzmijeni";
-            this.GumbIzmijeni.Size = new System.Drawing.Size(120, 31);
-            this.GumbIzmijeni.TabIndex = 6;
-            this.GumbIzmijeni.Text = "Izmijeni";
-            this.GumbIzmijeni.UseVisualStyleBackColor = true;
-            this.GumbIzmijeni.Click += new System.EventHandler(this.GumbIzmijeni_Click);
+            this.btnIzmijeni.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnIzmijeni.Location = new System.Drawing.Point(337, 426);
+            this.btnIzmijeni.Name = "btnIzmijeni";
+            this.btnIzmijeni.Size = new System.Drawing.Size(120, 31);
+            this.btnIzmijeni.TabIndex = 6;
+            this.btnIzmijeni.Text = "Izmijeni";
+            this.btnIzmijeni.UseVisualStyleBackColor = true;
+            this.btnIzmijeni.Click += new System.EventHandler(this.btnIzmijeni_Click);
             // 
             // FormaPregledLinija
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(750, 498);
-            this.Controls.Add(this.DodajGumb);
-            this.Controls.Add(this.BrisiGumb);
-            this.Controls.Add(this.GumbIzmijeni);
+            this.Controls.Add(this.btnDodaj);
+            this.Controls.Add(this.btnBrisi);
+            this.Controls.Add(this.btnIzmijeni);
             this.Controls.Add(this.dgvLinije);
             this.Controls.Add(this.prikazLinija);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -159,9 +158,9 @@
         private System.Windows.Forms.Panel prikazLinija;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dgvLinije;
-        private System.Windows.Forms.Button DodajGumb;
-        private System.Windows.Forms.Button BrisiGumb;
-        private System.Windows.Forms.Button GumbIzmijeni;
-        private System.Windows.Forms.Button OdjavaGumb;
+        private System.Windows.Forms.Button btnDodaj;
+        private System.Windows.Forms.Button btnBrisi;
+        private System.Windows.Forms.Button btnIzmijeni;
+        private System.Windows.Forms.Button btnOdjava;
     }
 }
