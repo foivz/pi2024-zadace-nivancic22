@@ -1,6 +1,6 @@
 ﻿namespace BusPlus
 {
-    partial class FormaPregledLinija
+    partial class frmPregledLinija
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormaPregledLinija));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPregledLinija));
             this.prikazLinija = new System.Windows.Forms.Panel();
             this.btnOdjava = new System.Windows.Forms.Button();
             this.lblNaslov = new System.Windows.Forms.Label();
@@ -131,7 +131,7 @@
             this.btnIzmijeni.UseVisualStyleBackColor = true;
             this.btnIzmijeni.Click += new System.EventHandler(this.btnIzmijeni_Click);
             // 
-            // FormaPregledLinija
+            // frmPregledLinija
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -142,9 +142,9 @@
             this.Controls.Add(this.dgvLinije);
             this.Controls.Add(this.prikazLinija);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "FormaPregledLinija";
+            this.Name = "frmPregledLinija";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FormaPregledLinija";
+            this.Text = "Pregled Linija";
             this.Load += new System.EventHandler(this.FormaPregledLinija_Load);
             this.prikazLinija.ResumeLayout(false);
             this.prikazLinija.PerformLayout();

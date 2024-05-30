@@ -15,9 +15,9 @@ using DBLayer;
 
 namespace BusPlus
 {
-    public partial class FormaKreiranjeLinije : Form
+    public partial class frmKreiranje : Form
     {
-        public FormaKreiranjeLinije()
+        public frmKreiranje()
         {
             InitializeComponent();
         }
@@ -41,7 +41,7 @@ namespace BusPlus
                 if(regex.IsMatch(txtPocVr.Text) && regex.IsMatch(txtZavrVr.Text)){
                     LinijaRepozitorij.UbaciLiniju(int.Parse(txtIdLin.Text), txtPocStan.Text, txtZavrStan.Text, int.Parse(txtBrBus.Text), txtPocVr.Text, txtZavrVr.Text);
                     Hide();
-                    FormaPregledLinija formaPregled = new FormaPregledLinija();
+                    frmPregledLinija formaPregled = new frmPregledLinija();
                     formaPregled.ShowDialog();
                     Close(); 
                 }
@@ -61,7 +61,7 @@ namespace BusPlus
         private void btnPovratak_Click(object sender, EventArgs e)
         {
             Hide();
-            FormaPregledLinija formaPregledLinija = new FormaPregledLinija();
+            frmPregledLinija formaPregledLinija = new frmPregledLinija();
             formaPregledLinija.ShowDialog();
             Close();
         }

@@ -12,9 +12,9 @@ using System.Windows.Forms;
 
 namespace BusPlus
 {
-    public partial class FormaPregledLinija : Form
+    public partial class frmPregledLinija : Form
     {
-        public FormaPregledLinija()
+        public frmPregledLinija()
         {
             InitializeComponent();
         }
@@ -32,7 +32,7 @@ namespace BusPlus
 
         private void btnDodaj_Click(object sender, EventArgs e)
         {
-            FormaKreiranjeLinije formaNovaLinija = new FormaKreiranjeLinije();
+            frmKreiranje formaNovaLinija = new frmKreiranje();
             Hide();
             formaNovaLinija.ShowDialog();
             Close();
@@ -40,7 +40,7 @@ namespace BusPlus
 
         private void btnIzmijeni_Click(object sender, EventArgs e)
         {
-            FormaIzmijenaLinije formaIzmijena = new FormaIzmijenaLinije();
+            frmIzmijenaLinije formaIzmijena = new frmIzmijenaLinije();
             Hide();
             formaIzmijena.ShowDialog();
             Close();
@@ -50,7 +50,7 @@ namespace BusPlus
         private void btnOdjava_Click(object sender, EventArgs e)
         {
             Hide();
-            FormaLogin formalogin = new FormaLogin();
+            frmLogin formalogin = new frmLogin();
             formalogin.ShowDialog();
             Close();
         }
@@ -58,7 +58,7 @@ namespace BusPlus
         private void btnBrisi_Click(object sender, EventArgs e)
         {
             Hide();
-            FormaBrisanje formabrisanje = new FormaBrisanje();
+            frmBrisanje formabrisanje = new frmBrisanje();
             formabrisanje.ShowDialog();
             Close();
         }

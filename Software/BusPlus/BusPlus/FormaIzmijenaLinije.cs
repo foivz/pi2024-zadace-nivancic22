@@ -13,9 +13,9 @@ using System.Windows.Forms;
 
 namespace BusPlus
 {
-    public partial class FormaIzmijenaLinije : Form
+    public partial class frmIzmijenaLinije : Form
     {
-        public FormaIzmijenaLinije()
+        public frmIzmijenaLinije()
         {
             InitializeComponent();
         }
@@ -39,7 +39,7 @@ namespace BusPlus
                     {
                         LinijaRepozitorij.AzurirajLiniju(int.Parse(txtIdLin.Text), txtPocStan.Text, txtZavrStan.Text, int.Parse(txtBrBus.Text), txtPocVr.Text, txtZavrVr.Text);
                         Hide();
-                        FormaPregledLinija formaPregled = new FormaPregledLinija();
+                        frmPregledLinija formaPregled = new frmPregledLinija();
                         formaPregled.ShowDialog();
                         Close();
                     }
@@ -59,7 +59,7 @@ namespace BusPlus
         private void btnPovratak_Click(object sender, EventArgs e)
         {
             Hide();
-            FormaPregledLinija formaPregledLinija = new FormaPregledLinija();
+            frmPregledLinija formaPregledLinija = new frmPregledLinija();
             formaPregledLinija.ShowDialog();
             Close();
         }

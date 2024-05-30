@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace BusPlus
 {
-    public partial class FormaLogin : Form
+    public partial class frmLogin : Form
     {
-        public FormaLogin()
+        public frmLogin()
         {
             InitializeComponent();
         }
@@ -27,7 +27,7 @@ namespace BusPlus
             }
             else if(username == "zaposlenik" && password == "lozinka")
             {
-                FormaPregledLinija formalinije = new FormaPregledLinija();
+                frmPregledLinija formalinije = new frmPregledLinija();
                 Hide();
                 formalinije.ShowDialog();
                 Close();
@@ -35,7 +35,7 @@ namespace BusPlus
             else if (username == "korisnik" && password == "lozinka")
             {
                 
-                FormaPrikazLinijaZaKorisnike formaPrikaz = new FormaPrikazLinijaZaKorisnike();
+                frmPrikazLinija formaPrikaz = new frmPrikazLinija();
                 Hide();
                 formaPrikaz.ShowDialog();
                 Close();

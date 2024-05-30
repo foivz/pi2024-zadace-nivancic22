@@ -1,6 +1,6 @@
 ﻿namespace BusPlus
 {
-    partial class FormaKreiranjeLinije
+    partial class frmKreiranje
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormaKreiranjeLinije));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmKreiranje));
             this.prikazLinija = new System.Windows.Forms.Panel();
             this.lblNaslov = new System.Windows.Forms.Label();
             this.txtPocStan = new System.Windows.Forms.TextBox();
@@ -230,7 +230,7 @@
             this.btnPovratak.UseVisualStyleBackColor = true;
             this.btnPovratak.Click += new System.EventHandler(this.btnPovratak_Click);
             // 
-            // FormaKreiranjeLinije
+            // frmKreiranje
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -254,9 +254,9 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "FormaKreiranjeLinije";
+            this.Name = "frmKreiranje";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FormaKreiranjeLinije";
+            this.Text = "Kreiranje Linija";
             this.prikazLinija.ResumeLayout(false);
             this.prikazLinija.PerformLayout();
             this.ResumeLayout(false);

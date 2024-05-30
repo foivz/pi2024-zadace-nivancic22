@@ -12,9 +12,9 @@ using System.Windows.Forms;
 
 namespace BusPlus
 {
-    public partial class FormaPrikazLinijaZaKorisnike : Form
+    public partial class frmPrikazLinija : Form
     {
-        public FormaPrikazLinijaZaKorisnike()
+        public frmPrikazLinija()
         {
             InitializeComponent();
         }
@@ -37,7 +37,7 @@ namespace BusPlus
 
         private void btnOdjava_Click(object sender, EventArgs e)
         {
-            FormaLogin formalogin = new FormaLogin();
+            frmLogin formalogin = new frmLogin();
             Hide();
             formalogin.ShowDialog();
             Close();
