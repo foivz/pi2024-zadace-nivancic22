@@ -22,16 +22,16 @@ namespace BusPlus
         private void btnBrisi_Click(object sender, EventArgs e)
         {
             List<Linija> linije = LinijaRepozitorij.GetLinije();
-            int id = int.Parse(IdLin.Text);
+            int id = int.Parse(txtIdLin.Text);
             Linija idLinije = linije.Find(linija => linija.ID_linije == id);
-            if (IdLin.Text == "" )
+            if (txtIdLin.Text == "" )
             {
                 MessageBox.Show("Ispunite polje!", "Pogreška", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 
             }
             else if(idLinije != null)
             {
-                LinijaRepozitorij.IzbrisiLiniju(int.Parse(IdLin.Text));
+                LinijaRepozitorij.IzbrisiLiniju(int.Parse(txtIdLin.Text));
                 Hide();
                 FormaPregledLinija formapregled = new FormaPregledLinija();
                 formapregled.ShowDialog();

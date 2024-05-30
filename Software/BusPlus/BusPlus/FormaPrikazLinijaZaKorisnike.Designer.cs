@@ -32,15 +32,15 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormaPrikazLinijaZaKorisnike));
             this.prikazLinija = new System.Windows.Forms.Panel();
             this.btnOdjava = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblNaslov = new System.Windows.Forms.Label();
             this.dgvLinije = new System.Windows.Forms.DataGridView();
             this.autobusneLinijeBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.pI2324nivancic22DBDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.pI2324_nivancic22_DBDataSet = new BusPlus.PI2324_nivancic22_DBDataSet();
             this.autobusneLinijeTableAdapter = new BusPlus.PI2324_nivancic22_DBDataSetTableAdapters.AutobusneLinijeTableAdapter();
             this.btnTrazi = new System.Windows.Forms.Button();
-            this.traziLabel = new System.Windows.Forms.Label();
-            this.traziTextBox = new System.Windows.Forms.TextBox();
+            this.lblTrazi = new System.Windows.Forms.Label();
+            this.txtTrazi = new System.Windows.Forms.TextBox();
             this.btnReset = new System.Windows.Forms.Button();
             this.prikazLinija.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLinije)).BeginInit();
@@ -55,7 +55,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.prikazLinija.BackColor = System.Drawing.Color.Maroon;
             this.prikazLinija.Controls.Add(this.btnOdjava);
-            this.prikazLinija.Controls.Add(this.label1);
+            this.prikazLinija.Controls.Add(this.lblNaslov);
             this.prikazLinija.Location = new System.Drawing.Point(1, 0);
             this.prikazLinija.Name = "prikazLinija";
             this.prikazLinija.Size = new System.Drawing.Size(813, 56);
@@ -76,16 +76,16 @@
             this.btnOdjava.UseVisualStyleBackColor = false;
             this.btnOdjava.Click += new System.EventHandler(this.btnOdjava_Click);
             // 
-            // label1
+            // lblNaslov
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(12, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(114, 31);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "BusPlus";
+            this.lblNaslov.AutoSize = true;
+            this.lblNaslov.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblNaslov.ForeColor = System.Drawing.Color.White;
+            this.lblNaslov.Location = new System.Drawing.Point(12, 9);
+            this.lblNaslov.Name = "lblNaslov";
+            this.lblNaslov.Size = new System.Drawing.Size(114, 31);
+            this.lblNaslov.TabIndex = 0;
+            this.lblNaslov.Text = "BusPlus";
             // 
             // dgvLinije
             // 
@@ -132,23 +132,23 @@
             this.btnTrazi.UseVisualStyleBackColor = true;
             this.btnTrazi.Click += new System.EventHandler(this.btnTrazi_Click);
             // 
-            // traziLabel
+            // lblTrazi
             // 
-            this.traziLabel.AutoSize = true;
-            this.traziLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.traziLabel.Location = new System.Drawing.Point(72, 88);
-            this.traziLabel.Name = "traziLabel";
-            this.traziLabel.Size = new System.Drawing.Size(138, 16);
-            this.traziLabel.TabIndex = 5;
-            this.traziLabel.Text = "Pretraži prema stanici:";
+            this.lblTrazi.AutoSize = true;
+            this.lblTrazi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblTrazi.Location = new System.Drawing.Point(72, 88);
+            this.lblTrazi.Name = "lblTrazi";
+            this.lblTrazi.Size = new System.Drawing.Size(138, 16);
+            this.lblTrazi.TabIndex = 5;
+            this.lblTrazi.Text = "Pretraži prema stanici:";
             // 
-            // traziTextBox
+            // txtTrazi
             // 
-            this.traziTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.traziTextBox.Location = new System.Drawing.Point(216, 85);
-            this.traziTextBox.Name = "traziTextBox";
-            this.traziTextBox.Size = new System.Drawing.Size(167, 22);
-            this.traziTextBox.TabIndex = 6;
+            this.txtTrazi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.txtTrazi.Location = new System.Drawing.Point(216, 85);
+            this.txtTrazi.Name = "txtTrazi";
+            this.txtTrazi.Size = new System.Drawing.Size(167, 22);
+            this.txtTrazi.TabIndex = 6;
             // 
             // btnReset
             // 
@@ -168,8 +168,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnReset);
-            this.Controls.Add(this.traziTextBox);
-            this.Controls.Add(this.traziLabel);
+            this.Controls.Add(this.txtTrazi);
+            this.Controls.Add(this.lblTrazi);
             this.Controls.Add(this.btnTrazi);
             this.Controls.Add(this.dgvLinije);
             this.Controls.Add(this.prikazLinija);
@@ -192,7 +192,7 @@
         #endregion
 
         private System.Windows.Forms.Panel prikazLinija;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblNaslov;
         private System.Windows.Forms.DataGridView dgvLinije;
         private System.Windows.Forms.BindingSource pI2324nivancic22DBDataSetBindingSource;
         private PI2324_nivancic22_DBDataSet pI2324_nivancic22_DBDataSet;
@@ -200,8 +200,8 @@
         private PI2324_nivancic22_DBDataSetTableAdapters.AutobusneLinijeTableAdapter autobusneLinijeTableAdapter;
         private System.Windows.Forms.Button btnOdjava;
         private System.Windows.Forms.Button btnTrazi;
-        private System.Windows.Forms.Label traziLabel;
-        private System.Windows.Forms.TextBox traziTextBox;
+        private System.Windows.Forms.Label lblTrazi;
+        private System.Windows.Forms.TextBox txtTrazi;
         private System.Windows.Forms.Button btnReset;
     }
 }

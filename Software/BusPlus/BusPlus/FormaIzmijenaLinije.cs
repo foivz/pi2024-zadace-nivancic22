@@ -25,9 +25,9 @@ namespace BusPlus
                 string vrijemeFormat = @"^\d{2}:\d{2}:\d{2}$";
                 Regex regex = new Regex(vrijemeFormat);
                 List<Linija> linije = LinijaRepozitorij.GetLinije();
-                int id = int.Parse(IdLin.Text);
+                int id = int.Parse(txtIdLin.Text);
                 Linija idLinije = linije.Find(linija => linija.ID_linije == id);
-                if (IdLin.Text == "" || PocStan.Text == "" || ZavrStan.Text == "" || BrBus.Text == "" || PocVr.Text == "" || ZavrVr.Text == "")
+                if (txtIdLin.Text == "" || txtPocStan.Text == "" || txtZavrStan.Text == "" || txtBrBus.Text == "" || txtPocVr.Text == "" || txtZavrVr.Text == "")
                 {
                     MessageBox.Show("Popunite sva polja", "Pogreška", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 
@@ -35,9 +35,9 @@ namespace BusPlus
 
                 else if (idLinije != null)
                 {
-                    if (regex.IsMatch(PocVr.Text) && regex.IsMatch(ZavrVr.Text))
+                    if (regex.IsMatch(txtPocVr.Text) && regex.IsMatch(txtZavrVr.Text))
                     {
-                        LinijaRepozitorij.AzurirajLiniju(int.Parse(IdLin.Text), PocStan.Text, ZavrStan.Text, int.Parse(BrBus.Text), PocVr.Text, ZavrVr.Text);
+                        LinijaRepozitorij.AzurirajLiniju(int.Parse(txtIdLin.Text), txtPocStan.Text, txtZavrStan.Text, int.Parse(txtBrBus.Text), txtPocVr.Text, txtZavrVr.Text);
                         Hide();
                         FormaPregledLinija formaPregled = new FormaPregledLinija();
                         formaPregled.ShowDialog();

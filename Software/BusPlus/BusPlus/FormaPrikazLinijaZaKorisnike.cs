@@ -49,7 +49,7 @@ namespace BusPlus
         }
         private void PrikaziTrazene()
         {
-            string stanica = traziTextBox.Text;
+            string stanica = txtTrazi.Text;
             List<Linija> linije = LinijaRepozitorij.TraziLiniju(stanica);
             dgvLinije.DataSource = linije;
         }

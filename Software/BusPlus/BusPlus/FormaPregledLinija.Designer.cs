@@ -31,7 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormaPregledLinija));
             this.prikazLinija = new System.Windows.Forms.Panel();
             this.btnOdjava = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblNaslov = new System.Windows.Forms.Label();
             this.dgvLinije = new System.Windows.Forms.DataGridView();
             this.btnDodaj = new System.Windows.Forms.Button();
             this.btnBrisi = new System.Windows.Forms.Button();
@@ -46,7 +46,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.prikazLinija.BackColor = System.Drawing.Color.Maroon;
             this.prikazLinija.Controls.Add(this.btnOdjava);
-            this.prikazLinija.Controls.Add(this.label1);
+            this.prikazLinija.Controls.Add(this.lblNaslov);
             this.prikazLinija.Location = new System.Drawing.Point(0, 0);
             this.prikazLinija.Name = "prikazLinija";
             this.prikazLinija.Size = new System.Drawing.Size(1201, 56);
@@ -67,19 +67,19 @@
             this.btnOdjava.UseVisualStyleBackColor = false;
             this.btnOdjava.Click += new System.EventHandler(this.btnOdjava_Click);
             // 
-            // label1
+            // lblNaslov
             // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.lblNaslov.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(12, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(114, 31);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "BusPlus";
+            this.lblNaslov.AutoSize = true;
+            this.lblNaslov.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblNaslov.ForeColor = System.Drawing.Color.White;
+            this.lblNaslov.Location = new System.Drawing.Point(12, 9);
+            this.lblNaslov.Name = "lblNaslov";
+            this.lblNaslov.Size = new System.Drawing.Size(114, 31);
+            this.lblNaslov.TabIndex = 0;
+            this.lblNaslov.Text = "BusPlus";
             // 
             // dgvLinije
             // 
@@ -156,7 +156,7 @@
         #endregion
 
         private System.Windows.Forms.Panel prikazLinija;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblNaslov;
         private System.Windows.Forms.DataGridView dgvLinije;
         private System.Windows.Forms.Button btnDodaj;
         private System.Windows.Forms.Button btnBrisi;

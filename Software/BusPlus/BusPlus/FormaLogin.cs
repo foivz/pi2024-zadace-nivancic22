@@ -19,8 +19,8 @@ namespace BusPlus
 
         private void btnPrijava_Click(object sender, EventArgs e)
         {
-            string username = KorimeTextbox.Text;
-            string password = LozinkaTextbox.Text;
+            string username = txtKorime.Text;
+            string password = txtLozinka.Text;
             if (username == "" || password == "")
             {
                 MessageBox.Show("Popunite sva polja", "Pogreška", MessageBoxButtons.OK, MessageBoxIcon.Warning);
