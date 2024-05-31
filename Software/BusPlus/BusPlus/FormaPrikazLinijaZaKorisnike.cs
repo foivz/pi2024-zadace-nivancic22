@@ -61,14 +61,22 @@ namespace BusPlus
             string vr = txtTraziVr.Text;
             List<Linija> linije = LinijaRepozitorij.TraziLiniju(stanica, vr);
             dgvLinije.DataSource = linije;
-            dgvLinije.Columns["PocetnaStanica"].DefaultCellStyle.ForeColor = Color.White;
-            dgvLinije.Columns["PocetnaStanica"].DefaultCellStyle.BackColor = Color.DarkRed;
-            dgvLinije.Columns["ZavrsnaStanica"].DefaultCellStyle.ForeColor = Color.White;
-            dgvLinije.Columns["ZavrsnaStanica"].DefaultCellStyle.BackColor = Color.DarkRed;
-            dgvLinije.Columns["PocetnoVrijeme"].DefaultCellStyle.ForeColor = Color.Black;
-            dgvLinije.Columns["PocetnoVrijeme"].DefaultCellStyle.BackColor = Color.LightGoldenrodYellow;
-            dgvLinije.Columns["ZavrsnoVrijeme"].DefaultCellStyle.ForeColor = Color.Black;
-            dgvLinije.Columns["ZavrsnoVrijeme"].DefaultCellStyle.BackColor = Color.LightGoldenrodYellow;
+            if (stanica != "")
+            {
+                dgvLinije.Columns["PocetnaStanica"].DefaultCellStyle.ForeColor = Color.White;
+                dgvLinije.Columns["PocetnaStanica"].DefaultCellStyle.BackColor = Color.DarkRed;
+                dgvLinije.Columns["ZavrsnaStanica"].DefaultCellStyle.ForeColor = Color.White;
+                dgvLinije.Columns["ZavrsnaStanica"].DefaultCellStyle.BackColor = Color.DarkRed;
+
+            }
+            if(vr != "")
+            {
+                dgvLinije.Columns["PocetnoVrijeme"].DefaultCellStyle.ForeColor = Color.White;
+                dgvLinije.Columns["PocetnoVrijeme"].DefaultCellStyle.BackColor = Color.DarkRed;
+                dgvLinije.Columns["ZavrsnoVrijeme"].DefaultCellStyle.ForeColor = Color.White;
+                dgvLinije.Columns["ZavrsnoVrijeme"].DefaultCellStyle.BackColor = Color.DarkRed;
+
+            }
 
         }
 
