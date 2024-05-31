@@ -32,8 +32,16 @@ namespace BusPlus
         {
             List<Linija> linije = LinijaRepozitorij.GetLinije();
             dgvLinije.DataSource = linije;
+            dgvLinije.Columns["PocetnaStanica"].DefaultCellStyle.ForeColor = Color.Black;
+            dgvLinije.Columns["PocetnaStanica"].DefaultCellStyle.BackColor = Color.White;
+            dgvLinije.Columns["ZavrsnaStanica"].DefaultCellStyle.ForeColor = Color.Black;
+            dgvLinije.Columns["ZavrsnaStanica"].DefaultCellStyle.BackColor = Color.White;
+            dgvLinije.Columns["PocetnoVrijeme"].DefaultCellStyle.ForeColor = Color.Black;
+            dgvLinije.Columns["PocetnoVrijeme"].DefaultCellStyle.BackColor = Color.White;
+            dgvLinije.Columns["ZavrsnoVrijeme"].DefaultCellStyle.ForeColor = Color.Black;
+            dgvLinije.Columns["ZavrsnoVrijeme"].DefaultCellStyle.BackColor = Color.White;
         }
-        
+
 
         private void btnOdjava_Click(object sender, EventArgs e)
         {
@@ -49,14 +57,29 @@ namespace BusPlus
         }
         private void PrikaziTrazene()
         {
-            string stanica = txtTrazi.Text;
-            List<Linija> linije = LinijaRepozitorij.TraziLiniju(stanica);
+            string stanica = txtTraziStan.Text;
+            string vr = txtTraziVr.Text;
+            List<Linija> linije = LinijaRepozitorij.TraziLiniju(stanica, vr);
             dgvLinije.DataSource = linije;
+            dgvLinije.Columns["PocetnaStanica"].DefaultCellStyle.ForeColor = Color.White;
+            dgvLinije.Columns["PocetnaStanica"].DefaultCellStyle.BackColor = Color.DarkRed;
+            dgvLinije.Columns["ZavrsnaStanica"].DefaultCellStyle.ForeColor = Color.White;
+            dgvLinije.Columns["ZavrsnaStanica"].DefaultCellStyle.BackColor = Color.DarkRed;
+            dgvLinije.Columns["PocetnoVrijeme"].DefaultCellStyle.ForeColor = Color.Black;
+            dgvLinije.Columns["PocetnoVrijeme"].DefaultCellStyle.BackColor = Color.LightGoldenrodYellow;
+            dgvLinije.Columns["ZavrsnoVrijeme"].DefaultCellStyle.ForeColor = Color.Black;
+            dgvLinije.Columns["ZavrsnoVrijeme"].DefaultCellStyle.BackColor = Color.LightGoldenrodYellow;
+
         }
 
         private void btnReset_Click(object sender, EventArgs e)
         {
             PokaziLinije();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -28,6 +28,10 @@ namespace BusPlus
             List<Linija> linije = LinijaRepozitorij.GetLinije();
             dgvLinije.DataSource = linije;
             dgvLinije.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dgvLinije.Columns["ID_linije"].DefaultCellStyle.ForeColor = Color.White;
+            dgvLinije.Columns["ID_linije"].DefaultCellStyle.BackColor = Color.DarkRed;
+            
+
         }
 
         private void btnDodaj_Click(object sender, EventArgs e)
@@ -41,7 +45,7 @@ namespace BusPlus
         private void btnIzmijeni_Click(object sender, EventArgs e)
         {
             frmIzmijenaLinije formaIzmijena = new frmIzmijenaLinije();
-            Hide();
+            //Hide(); Da se može vidjeti što se izmjenjuje
             formaIzmijena.ShowDialog();
             Close();
         }

@@ -82,11 +82,28 @@ namespace BusPlus.Repozitorij
             DB.ExecuteCommand(sql); 
             DB.CloseConnection();
         }
-        public static List<Linija> TraziLiniju(string stanica)
+        public static List<Linija> TraziLiniju(string stanica, string vr)
         {
-            
             var linije = new List<Linija>();
-            string sql = $"SELECT * FROM AutobusneLinije WHERE PocetnaStanica LIKE '{stanica}' OR ZavrsnaStanica LIKE '{stanica}'";
+            string sql;
+
+            if (!string.IsNullOrEmpty(stanica) && !string.IsNullOrEmpty(vr))
+            {
+                sql = $"SELECT * FROM AutobusneLinije WHERE (PocetnaStanica LIKE '%{stanica}%' OR ZavrsnaStanica LIKE '%{stanica}%') AND PocetnoVrijeme LIKE '%{vr}%'";
+            }
+            else if (!string.IsNullOrEmpty(stanica) && string.IsNullOrEmpty(vr))
+            {
+                sql = $"SELECT * FROM AutobusneLinije WHERE (PocetnaStanica LIKE '%{stanica}%' OR ZavrsnaStanica LIKE '%{stanica}%')";
+            }
+            else if (string.IsNullOrEmpty(stanica) && !string.IsNullOrEmpty(vr))
+            {
+                sql = $"SELECT * FROM AutobusneLinije WHERE PocetnoVrijeme LIKE '%{vr}%'";
+            }
+            else
+            {
+                sql = "SELECT * FROM AutobusneLinije";
+            }
+
             DB.OpenConnection();
             var reader = DB.GetDataReader(sql);
             while (reader.Read())

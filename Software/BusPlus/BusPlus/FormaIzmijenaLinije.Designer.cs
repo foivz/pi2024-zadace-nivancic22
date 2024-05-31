@@ -268,7 +268,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmIzmijenaLinije";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Izmijena Linije";
             this.prikazLinija.ResumeLayout(false);
             this.prikazLinija.PerformLayout();

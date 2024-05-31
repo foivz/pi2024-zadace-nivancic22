@@ -1,11 +1,7 @@
 {
   "ExpandedNodes": [
-    "",
-    "\\Software",
-    "\\Software\\BusPlus",
-    "\\Software\\BusPlus\\BusPlus",
-    "\\Software\\BusPlus\\BusPlus\\Repozitorij"
+    ""
   ],
-  "SelectedNode": "\\Software\\BusPlus\\BusPlus\\FormaPregledLinija.cs",
+  "SelectedNode": "\\BusPlus.sln",
   "PreviewInSolutionExplorer": false
 }

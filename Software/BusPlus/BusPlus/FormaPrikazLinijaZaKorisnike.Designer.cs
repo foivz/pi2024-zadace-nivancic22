@@ -39,9 +39,11 @@
             this.pI2324_nivancic22_DBDataSet = new BusPlus.PI2324_nivancic22_DBDataSet();
             this.autobusneLinijeTableAdapter = new BusPlus.PI2324_nivancic22_DBDataSetTableAdapters.AutobusneLinijeTableAdapter();
             this.btnTrazi = new System.Windows.Forms.Button();
-            this.lblTrazi = new System.Windows.Forms.Label();
-            this.txtTrazi = new System.Windows.Forms.TextBox();
+            this.lblTraziStan = new System.Windows.Forms.Label();
+            this.txtTraziStan = new System.Windows.Forms.TextBox();
             this.btnReset = new System.Windows.Forms.Button();
+            this.lblTraziVr = new System.Windows.Forms.Label();
+            this.txtTraziVr = new System.Windows.Forms.TextBox();
             this.prikazLinija.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLinije)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.autobusneLinijeBindingSource)).BeginInit();
@@ -91,12 +93,14 @@
             // 
             this.dgvLinije.AllowUserToAddRows = false;
             this.dgvLinije.AllowUserToDeleteRows = false;
+            this.dgvLinije.AllowUserToResizeColumns = false;
+            this.dgvLinije.AllowUserToResizeRows = false;
             this.dgvLinije.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvLinije.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvLinije.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvLinije.Location = new System.Drawing.Point(62, 116);
+            this.dgvLinije.Location = new System.Drawing.Point(62, 147);
             this.dgvLinije.Name = "dgvLinije";
             this.dgvLinije.ReadOnly = true;
             this.dgvLinije.Size = new System.Drawing.Size(677, 280);
@@ -124,7 +128,7 @@
             // btnTrazi
             // 
             this.btnTrazi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.btnTrazi.Location = new System.Drawing.Point(389, 84);
+            this.btnTrazi.Location = new System.Drawing.Point(424, 84);
             this.btnTrazi.Name = "btnTrazi";
             this.btnTrazi.Size = new System.Drawing.Size(75, 23);
             this.btnTrazi.TabIndex = 4;
@@ -132,23 +136,23 @@
             this.btnTrazi.UseVisualStyleBackColor = true;
             this.btnTrazi.Click += new System.EventHandler(this.btnTrazi_Click);
             // 
-            // lblTrazi
+            // lblTraziStan
             // 
-            this.lblTrazi.AutoSize = true;
-            this.lblTrazi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lblTrazi.Location = new System.Drawing.Point(72, 88);
-            this.lblTrazi.Name = "lblTrazi";
-            this.lblTrazi.Size = new System.Drawing.Size(138, 16);
-            this.lblTrazi.TabIndex = 5;
-            this.lblTrazi.Text = "Pretraži prema stanici:";
+            this.lblTraziStan.AutoSize = true;
+            this.lblTraziStan.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblTraziStan.Location = new System.Drawing.Point(72, 88);
+            this.lblTraziStan.Name = "lblTraziStan";
+            this.lblTraziStan.Size = new System.Drawing.Size(138, 16);
+            this.lblTraziStan.TabIndex = 5;
+            this.lblTraziStan.Text = "Pretraži prema stanici:";
             // 
-            // txtTrazi
+            // txtTraziStan
             // 
-            this.txtTrazi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.txtTrazi.Location = new System.Drawing.Point(216, 85);
-            this.txtTrazi.Name = "txtTrazi";
-            this.txtTrazi.Size = new System.Drawing.Size(167, 22);
-            this.txtTrazi.TabIndex = 6;
+            this.txtTraziStan.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.txtTraziStan.Location = new System.Drawing.Point(216, 85);
+            this.txtTraziStan.Name = "txtTraziStan";
+            this.txtTraziStan.Size = new System.Drawing.Size(188, 22);
+            this.txtTraziStan.TabIndex = 6;
             // 
             // btnReset
             // 
@@ -162,14 +166,35 @@
             this.btnReset.UseVisualStyleBackColor = true;
             this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
+            // lblTraziVr
+            // 
+            this.lblTraziVr.AutoSize = true;
+            this.lblTraziVr.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblTraziVr.Location = new System.Drawing.Point(72, 119);
+            this.lblTraziVr.Name = "lblTraziVr";
+            this.lblTraziVr.Size = new System.Drawing.Size(204, 16);
+            this.lblTraziVr.TabIndex = 8;
+            this.lblTraziVr.Text = "Pretraži prema vremenu polaska:";
+            this.lblTraziVr.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // txtTraziVr
+            // 
+            this.txtTraziVr.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.txtTraziVr.Location = new System.Drawing.Point(282, 116);
+            this.txtTraziVr.Name = "txtTraziVr";
+            this.txtTraziVr.Size = new System.Drawing.Size(122, 22);
+            this.txtTraziVr.TabIndex = 9;
+            // 
             // frmPrikazLinija
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.txtTraziVr);
+            this.Controls.Add(this.lblTraziVr);
             this.Controls.Add(this.btnReset);
-            this.Controls.Add(this.txtTrazi);
-            this.Controls.Add(this.lblTrazi);
+            this.Controls.Add(this.txtTraziStan);
+            this.Controls.Add(this.lblTraziStan);
             this.Controls.Add(this.btnTrazi);
             this.Controls.Add(this.dgvLinije);
             this.Controls.Add(this.prikazLinija);
@@ -200,8 +225,10 @@
         private PI2324_nivancic22_DBDataSetTableAdapters.AutobusneLinijeTableAdapter autobusneLinijeTableAdapter;
         private System.Windows.Forms.Button btnOdjava;
         private System.Windows.Forms.Button btnTrazi;
-        private System.Windows.Forms.Label lblTrazi;
-        private System.Windows.Forms.TextBox txtTrazi;
+        private System.Windows.Forms.Label lblTraziStan;
+        private System.Windows.Forms.TextBox txtTraziStan;
         private System.Windows.Forms.Button btnReset;
+        private System.Windows.Forms.Label lblTraziVr;
+        private System.Windows.Forms.TextBox txtTraziVr;
     }
 }
