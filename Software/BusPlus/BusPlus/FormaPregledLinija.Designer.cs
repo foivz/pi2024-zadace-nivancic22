@@ -93,6 +93,7 @@
             this.dgvLinije.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvLinije.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvLinije.Location = new System.Drawing.Point(37, 85);
+            this.dgvLinije.MultiSelect = false;
             this.dgvLinije.Name = "dgvLinije";
             this.dgvLinije.ReadOnly = true;
             this.dgvLinije.Size = new System.Drawing.Size(672, 319);
