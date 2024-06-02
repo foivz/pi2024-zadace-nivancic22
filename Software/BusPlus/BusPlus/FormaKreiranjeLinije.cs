@@ -27,6 +27,7 @@ namespace BusPlus
         {
             string vrijemeFormat = @"^\d{2}:\d{2}:\d{2}$";
             Regex regex = new Regex(vrijemeFormat);
+
             List<Linija> linije = LinijaRepozitorij.GetLinije();
             int id = int.Parse(txtIdLin.Text);
             Linija idLinije = linije.Find(linija => linija.ID_linije == id);
@@ -56,8 +57,6 @@ namespace BusPlus
 
             }
         }
-
-        
         private void btnPovratak_Click(object sender, EventArgs e)
         {
             Hide();

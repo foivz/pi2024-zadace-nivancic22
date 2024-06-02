@@ -62,7 +62,6 @@ namespace BusPlus.Repozitorij
         }
         public static void UbaciLiniju(int id, string pocstan, string zavrstan, int brbus, string pocvreme, string zavrvreme)
         {
-            
             string uvjet = $"INSERT INTO AutobusneLinije (ID_linije, PocetnaStanica, ZavrsnaStanica, BrojAutobusa, PocetnoVrijeme, ZavrsnoVrijeme) VALUES ({id}, '{pocstan}', '{zavrstan}', {brbus}, '{pocvreme}', '{zavrvreme}')";
             DB.OpenConnection();
             DB.ExecuteCommand(uvjet);

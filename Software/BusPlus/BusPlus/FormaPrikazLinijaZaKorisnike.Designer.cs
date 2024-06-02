@@ -176,7 +176,6 @@
             this.lblTraziVr.Size = new System.Drawing.Size(204, 16);
             this.lblTraziVr.TabIndex = 8;
             this.lblTraziVr.Text = "Pretraži prema vremenu polaska:";
-            this.lblTraziVr.Click += new System.EventHandler(this.label1_Click);
             // 
             // txtTraziVr
             // 

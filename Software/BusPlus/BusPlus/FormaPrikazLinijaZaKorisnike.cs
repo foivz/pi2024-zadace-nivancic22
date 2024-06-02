@@ -21,9 +21,7 @@ namespace BusPlus
 
         private void FormaPrikazLinijaZaKorisnike_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'pI2324_nivancic22_DBDataSet.AutobusneLinije' table. You can move, or remove it, as needed.
-            //this.autobusneLinijeTableAdapter.Fill(this.pI2324_nivancic22_DBDataSet.AutobusneLinije);
-            PokaziLinije();
+           PokaziLinije();
         }
 
         
@@ -83,11 +81,6 @@ namespace BusPlus
         private void btnReset_Click(object sender, EventArgs e)
         {
             PokaziLinije();
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

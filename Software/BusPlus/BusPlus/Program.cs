@@ -16,7 +16,6 @@ namespace BusPlus
         static void Main()
         {
             DB.SetConfiguration("PI2324_nivancic22_DB", "PI2324_nivancic22_User", "Mrhzw80@");
-            
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new frmLogin());

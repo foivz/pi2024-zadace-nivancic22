@@ -53,9 +53,7 @@ namespace BusPlus
                     MessageBox.Show("Ne možete promijeniti liniju koja ne postoji!", "Pogreška", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 
                 }
-
         }
-
         private void btnPovratak_Click(object sender, EventArgs e)
         {
             Hide();
@@ -63,7 +61,5 @@ namespace BusPlus
             formaPregledLinija.ShowDialog();
             Close();
         }
-
-        
     }
 }

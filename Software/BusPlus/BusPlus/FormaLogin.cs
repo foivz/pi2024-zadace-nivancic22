@@ -16,7 +16,6 @@ namespace BusPlus
         {
             InitializeComponent();
         }
-
         private void btnPrijava_Click(object sender, EventArgs e)
         {
             string username = txtKorime.Text;
@@ -34,7 +33,6 @@ namespace BusPlus
             }
             else if (username == "korisnik" && password == "lozinka")
             {
-                
                 frmPrikazLinija formaPrikaz = new frmPrikazLinija();
                 Hide();
                 formaPrikaz.ShowDialog();
@@ -45,13 +43,6 @@ namespace BusPlus
             {
                 MessageBox.Show("Uneseni su krivi podaci!", "Pogreška", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
-        }
-
-        
-
-        private void FormaLogin_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }
